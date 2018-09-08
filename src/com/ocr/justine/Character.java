@@ -2,26 +2,47 @@ package com.ocr.justine;
 
 public class Character {
 
-    private Integer level;
-    private Integer life;
-    private Integer strength;
-    private Integer agility;
-    private Integer intelligence;
+    protected int level;
+    protected int life;
+    protected int strength;
+    protected int agility;
+    protected int intelligence;
 
+    public int getLevel() {
+        return level;
+    }
 
-    public Character(Integer level, Integer life, Integer strength, Integer agility, Integer intelligence) {
+    public int getLife() {
+        return life;
+    }
+
+    public int getStrength() {
+        return strength;
+    }
+
+    public int getAgility() {
+        return agility;
+    }
+
+    public int getIntelligence() {
+        return intelligence;
+    }
+
+     public Character(int level, int strength, int agility, int intelligence) {
         this.level = level;
-        this.life = life;
+        this.life = (this.level)*5;
         this.strength = strength;
         this.agility = agility;
         this.intelligence = intelligence;
     }
 
+
     /**
      * Display a full description of the character
      */
-    public String describe(){
-        System.out.println("")
+    public void describe(){
+        System.out.println("niveau "+this.level+" je possède "+this.life+" de vitalité, "+this.strength+" de force, "+this.agility+" d'agilité et "+this.intelligence+" d'intelligence !"
+        );
     }
 
 
@@ -37,7 +58,7 @@ public class Character {
      * Run a special attack with various effects
      * @param character attacked
      */
-    public void BasicAttack(Character character){
+    public void SpecialAttack(Character character){
 
     }
 
