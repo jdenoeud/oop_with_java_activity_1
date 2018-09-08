@@ -1,12 +1,12 @@
 package com.ocr.justine;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        Character character = new Character(10,10,0,0);
-        character.describe();
-        System.out.println(character.getLife());
-
+       Play play = new Play();
+       play.askPlayer();
     }
 }
