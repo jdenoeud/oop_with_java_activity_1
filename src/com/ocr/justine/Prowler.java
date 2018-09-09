@@ -14,14 +14,16 @@ public class Prowler extends Player{
     @Override
     public void basicAttack(Player target){
         int damagesTarget = this.getAgility();
-        target.setLife(target.getLife() - damagesTarget);
+        target.setAgility(target.getAgility() - damagesTarget);
         System.out.println("Joueur "+this.getPlayerNumber()+" utilise Tir à l'arc et inflige "+damagesTarget+" dommages.");
         System.out.println("Joueur "+target.getPlayerNumber()+" perd "+ damagesTarget + " points de vie");
     }
 
     @Override
     public void specialAttack(Player cible){
-        System.out.println("Attaque spéciale !");
+        int bonus = this.getLevel() /2;
+        this.setAgility(this.getAgility()+bonus);
+        System.out.println("Joueur "+this.getPlayerNumber()+" utilise Concentration et gagne "+bonus+" en agilité.");
     }
 
 }
