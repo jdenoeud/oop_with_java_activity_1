@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e08a6084-e290-40b0-b081-00137d8a9ba1" name="Default Changelist" comment="">
+    <list default="true" id="e08a6084-e290-40b0-b081-00137d8a9ba1" name="Default Changelist" comment="Add basic and special attacks to Warrior">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ocr/justine/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ocr/justine/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ocr/justine/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ocr/justine/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ocr/justine/Prowler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ocr/justine/Prowler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ocr/justine/Warrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ocr/justine/Warrior.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ocr/justine/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ocr/justine/Wizard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/ocr/justine/PlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/ocr/justine/PlayerTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,14 +35,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="7783" />
-          <entry key="PLAIN_TEXT" value="395" />
+          <entry key="JAVA" value="8710" />
+          <entry key="PLAIN_TEXT" value="468" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="7783" />
-          <entry key="txt" value="395" />
+          <entry key="java" value="8710" />
+          <entry key="txt" value="468" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -58,8 +58,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/ocr/justine/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="780">
-              <caret line="52" column="40" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
+            <state relative-caret-position="-30">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -85,29 +85,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ocr/justine/Wizard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
-              <folding>
-                <element signature="e#105#106#0" expanded="true" />
-                <element signature="e#140#141#0" expanded="true" />
-                <element signature="e#487#488#0" expanded="true" />
-                <element signature="e#542#543#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/ocr/justine/PlayerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-              <folding>
-                <element signature="e#450#451#0" expanded="true" />
-                <element signature="e#508#509#0" expanded="true" />
-                <element signature="e#559#560#0" expanded="true" />
-                <element signature="e#600#601#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="45">
+              <caret line="22" column="77" lean-forward="true" selection-start-line="22" selection-start-column="77" selection-end-line="22" selection-end-column="77" />
             </state>
           </provider>
         </entry>
@@ -115,8 +94,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ocr/justine/Warrior.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+            <state relative-caret-position="225">
+              <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
               <folding>
                 <element signature="e#102#103#0" expanded="true" />
                 <element signature="e#137#138#0" expanded="true" />
@@ -128,9 +107,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ocr/justine/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+            <state relative-caret-position="75">
+              <caret line="51" column="25" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
               <folding>
+                <element signature="e#335#336#0" expanded="true" />
+                <element signature="e#366#367#0" expanded="true" />
+                <element signature="e#397#398#0" expanded="true" />
+                <element signature="e#427#428#0" expanded="true" />
+                <element signature="e#463#464#0" expanded="true" />
+                <element signature="e#498#499#0" expanded="true" />
+                <element signature="e#527#528#0" expanded="true" />
+                <element signature="e#555#556#0" expanded="true" />
                 <element signature="e#186#187#0" expanded="true" />
                 <element signature="e#221#222#0" expanded="true" />
                 <element signature="e#398#399#0" expanded="true" />
@@ -141,8 +128,10 @@
                 <element signature="e#608#609#0" expanded="true" />
                 <element signature="e#661#662#0" expanded="true" />
                 <element signature="e#709#710#0" expanded="true" />
-                <element signature="e#748#749#0" expanded="true" />
-                <element signature="e#782#783#0" expanded="true" />
+                <element signature="e#976#977#0" expanded="true" />
+                <element signature="e#1010#1011#0" expanded="true" />
+                <element signature="e#1048#1049#0" expanded="true" />
+                <element signature="e#1082#1083#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -177,12 +166,12 @@
         <option value="$PROJECT_DIR$/src/com/ocr/justine/Character.java" />
         <option value="$PROJECT_DIR$/src/com/ocr/justine/Role.java" />
         <option value="$PROJECT_DIR$/src/com/ocr/justine/Play.java" />
-        <option value="$PROJECT_DIR$/test/com/ocr/justine/PlayerTest.java" />
-        <option value="$PROJECT_DIR$/src/com/ocr/justine/Wizard.java" />
         <option value="$PROJECT_DIR$/src/com/ocr/justine/Prowler.java" />
+        <option value="$PROJECT_DIR$/test/com/ocr/justine/PlayerTest.java" />
         <option value="$PROJECT_DIR$/src/com/ocr/justine/Player.java" />
-        <option value="$PROJECT_DIR$/src/com/ocr/justine/Warrior.java" />
         <option value="$PROJECT_DIR$/src/com/ocr/justine/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/ocr/justine/Warrior.java" />
+        <option value="$PROJECT_DIR$/src/com/ocr/justine/Wizard.java" />
       </list>
     </option>
   </component>
@@ -247,7 +236,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536502574946" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536505077439" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../MyMenu-I" />
@@ -443,7 +432,14 @@
       <option name="project" value="LOCAL" />
       <updated>1536501083631</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Add method attack(attacker, target)">
+      <created>1536502596533</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1536502596534</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -491,15 +487,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2749196" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39871383" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34244373" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39836067" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32723358" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.31993568" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.31832796" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" visible="true" weight="0.0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -552,14 +548,16 @@
     <MESSAGE value="Clean up files" />
     <MESSAGE value="Optimize createPlayer" />
     <MESSAGE value="Reorganize testPlayer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reorganize testPlayer" />
+    <MESSAGE value="Add method attack(attacker, target)" />
+    <MESSAGE value="Add basic and special attacks to Warrior" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add basic and special attacks to Warrior" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/ocr/justine/Player.java</url>
-          <line>99</line>
+          <line>114</line>
           <properties />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
@@ -604,19 +602,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ocr/justine/Wizard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
-          <folding>
-            <element signature="e#105#106#0" expanded="true" />
-            <element signature="e#140#141#0" expanded="true" />
-            <element signature="e#487#488#0" expanded="true" />
-            <element signature="e#542#543#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ocr/justine/Prowler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -630,11 +615,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/ocr/justine/PlayerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="48" column="4" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#450#451#0" expanded="true" />
+            <element signature="e#508#509#0" expanded="true" />
+            <element signature="e#559#560#0" expanded="true" />
+            <element signature="e#600#601#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ocr/justine/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+        <state relative-caret-position="75">
+          <caret line="51" column="25" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
           <folding>
+            <element signature="e#335#336#0" expanded="true" />
+            <element signature="e#366#367#0" expanded="true" />
+            <element signature="e#397#398#0" expanded="true" />
+            <element signature="e#427#428#0" expanded="true" />
+            <element signature="e#463#464#0" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
+            <element signature="e#527#528#0" expanded="true" />
+            <element signature="e#555#556#0" expanded="true" />
             <element signature="e#186#187#0" expanded="true" />
             <element signature="e#221#222#0" expanded="true" />
             <element signature="e#398#399#0" expanded="true" />
@@ -645,16 +652,18 @@
             <element signature="e#608#609#0" expanded="true" />
             <element signature="e#661#662#0" expanded="true" />
             <element signature="e#709#710#0" expanded="true" />
-            <element signature="e#748#749#0" expanded="true" />
-            <element signature="e#782#783#0" expanded="true" />
+            <element signature="e#976#977#0" expanded="true" />
+            <element signature="e#1010#1011#0" expanded="true" />
+            <element signature="e#1048#1049#0" expanded="true" />
+            <element signature="e#1082#1083#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ocr/justine/Warrior.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+        <state relative-caret-position="225">
+          <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
           <folding>
             <element signature="e#102#103#0" expanded="true" />
             <element signature="e#137#138#0" expanded="true" />
@@ -662,23 +671,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/ocr/justine/PlayerTest.java">
+    <entry file="file://$PROJECT_DIR$/src/com/ocr/justine/Wizard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-          <folding>
-            <element signature="e#450#451#0" expanded="true" />
-            <element signature="e#508#509#0" expanded="true" />
-            <element signature="e#559#560#0" expanded="true" />
-            <element signature="e#600#601#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="45">
+          <caret line="22" column="77" lean-forward="true" selection-start-line="22" selection-start-column="77" selection-end-line="22" selection-end-column="77" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ocr/justine/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="52" column="40" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
+        <state relative-caret-position="-30">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

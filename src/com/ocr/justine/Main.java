@@ -11,7 +11,12 @@ public class Main {
         player1.describe();
         Player player2 = createPlayer(2);
         player2.describe();
+
+        //Play
         attack(player1, player2);
+        attack(player2, player1);
+        attack(player1, player2);
+        attack(player2, player1);
 
         }
 
@@ -36,8 +41,6 @@ public class Main {
      }
 
     public static void attack(Player attacker, Player target) {
-
-
         Scanner sc = new Scanner(System.in);
         System.out.println("Joueur "+attacker.getPlayerNumber()+" ("+ attacker.getLife()+" Vitalité) Veuillez choisir votre action (1 : Attaque Basique, 2 : Attaque Spéciale)");
         int action = 0;

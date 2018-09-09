@@ -5,16 +5,28 @@ import java.util.Scanner;
 public abstract class Player {
 
     protected int life;
-
-
-
     protected int strength;
     protected int agility;
     protected int intelligence;
     protected int playerNumber;
     protected int level;
-
     Scanner sc = new Scanner(System.in);
+
+    public int getStrength() {
+        return strength;
+    }
+
+    public int getAgility() {
+        return agility;
+    }
+
+    public int getIntelligence() {
+        return intelligence;
+    }
+
+    public int getLevel() {
+        return level;
+    }
 
     public int getPlayerNumber() {
         return playerNumber;
@@ -38,6 +50,9 @@ public abstract class Player {
 
     public void setLevel(int level) {
         this.level = level;
+    }
+    public void setLife(int life) {
+        this.life = life;
     }
 
     private void initLevel() {

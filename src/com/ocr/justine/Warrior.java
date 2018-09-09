@@ -15,13 +15,21 @@ public class Warrior extends Player{
 
     @Override
     public void basicAttack(Player target){
-        System.out.println(this.getPlayerNumber()+"attaque basique sur joueur "+target.getPlayerNumber());
+        int damagesTarget = this.getLevel();
+        target.setLife(target.getLife() - damagesTarget);
+        System.out.println("Joueur "+this.getPlayerNumber()+" utilise Coup d'Epée et inflige "+damagesTarget+" dommages.");
+        System.out.println("Joueur "+target.getPlayerNumber()+" perd "+ damagesTarget + " points de vie");
     }
 
     @Override
     public void specialAttack(Player target){
-
-        System.out.println("Joueur "+this.getPlayerNumber()+ " attaque spéciale sur joueur "+target.getPlayerNumber());
+        int damagesTarget = this.getStrength()*2;
+        target.setLife(target.getLife() - damagesTarget);
+        int damagesAttacker = this.getStrength()/2;
+        this.setLife(this.getLife()-damagesAttacker);
+        System.out.println("Joueur "+this.getPlayerNumber()+" utilise Coup de Rage et inflige "+damagesTarget+" dommages.");
+        System.out.println("Joueur "+target.getPlayerNumber()+" perd "+ damagesTarget + " points de vie");
+        System.out.println("Joueur "+this.getPlayerNumber()+" perd "+ damagesAttacker + " points de vie");
     }
 
 

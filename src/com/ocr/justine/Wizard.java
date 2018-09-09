@@ -2,8 +2,11 @@ package com.ocr.justine;
 
 public class Wizard extends Player {
 
+    private int maxLife ;
+
     public Wizard(int playerNumber) {
         super(playerNumber);
+        this.maxLife = this.life;
     }
 
     @Override
@@ -14,11 +17,24 @@ public class Wizard extends Player {
 
     @Override
     public void basicAttack(Player target){
-        System.out.println("Attaque basique !");
+        int damagesTarget = this.getIntelligence();
+        target.setLife(target.getLife() - damagesTarget);
+        System.out.println("Joueur "+this.getPlayerNumber()+" utilise Boule de Feu et inflige "+damagesTarget+" dommages.");
+        System.out.println("Joueur "+target.getPlayerNumber()+" perd "+ damagesTarget + " points de vie");
     }
 
     @Override
     public void specialAttack(Player cible){
-        System.out.println("Attaque spéciale !");
+        int newLifeValue = this.getLife()+ this.getIntelligence()*2;
+        int bonus;
+        if (newLifeValue < maxLife){
+            bonus = this.getIntelligence()*2;
+        }
+        else {
+            bonus = maxLife - newLifeValue;
+        }
+        this.setLife(this.getLife()+bonus);
+        System.out.println("Joueur "+this.getPlayerNumber()+" utilise Soin et gagne "+bonus+" en vitalité.");
+
     }
 }
