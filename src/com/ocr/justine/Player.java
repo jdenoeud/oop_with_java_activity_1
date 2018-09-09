@@ -1,5 +1,6 @@
 package com.ocr.justine;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public abstract class Player {
@@ -48,27 +49,32 @@ public abstract class Player {
         this.intelligence = intelligence;
     }
 
-    public void setLevel(int level) {
-        this.level = level;
+    public void setLevel(int level) throws PlayerExceptions {
+            if (level<1 || level>100)
+                throw new PlayerExceptions();
+            else
+                this.level = level;
     }
+
     public void setLife(int life) {
         this.life = life;
     }
 
     private void initLevel() {
-        int response = 0;
-
-        System.out.println("Niveau du personnage ?");
         do{
-            response = sc.nextInt();
-            if (response >=1 && response <=100) {
+            System.out.println("Niveau du personnage ?");
+            try{
+                int response = 0;
+                response = sc.nextInt();
                 setLevel(response);
                 break;
+            } catch (PlayerExceptions e){
+                sc.next();
             }
-            else {
-                System.out.println("Le niveau doit être compris entre 1 et 100");
+            catch (InputMismatchException e) {
+                System.out.println("La valeur rentrée n'est pas un nombre entier");
+                sc.next();
             }
-
         } while (true);
     }
 
