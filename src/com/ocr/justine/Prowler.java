@@ -12,7 +12,7 @@ public class Prowler extends Player{
     }
 
     @Override
-    public void basicAttack(){
+    public void basicAttack(Player target){
         System.out.println("Attaque basique !");
     }
 

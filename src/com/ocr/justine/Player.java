@@ -20,8 +20,8 @@ public abstract class Player {
         return playerNumber;
     }
 
-    public String getLife() {
-        return life + "Vitalité";
+    public int getLife() {
+        return life;
     }
 
     public void setStrength(int strength) {
@@ -124,5 +124,5 @@ public abstract class Player {
 
     public abstract void specialAttack(Player cible);
 
-    public abstract void basicAttack();
+    public abstract void basicAttack(Player target);
 }

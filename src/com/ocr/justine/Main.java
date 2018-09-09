@@ -8,37 +8,11 @@ public class Main {
     public static void main(String[] args) {
         // Create Player
         Player player1 = createPlayer(1);
-        Player player2;
-
         player1.describe();
-        player2 = createPlayer(2);
+        Player player2 = createPlayer(2);
         player2.describe();
-        System.out.println(player1.getLife());
+        attack(player1, player2);
 
-        /*System.out.println("Joueur "+player1.getPlayerNumber()+" ("+player1.getLife()+") Veuillez choisir votre action (1 : Attaque Basique, 2 : Attaque Spéciale)");
-        Scanner sc = new Scanner(System.in);
-        int action = 0;
-        do {
-            action = sc.nextInt();
-            if (action == 1 || action ==2
-            )
-                responseIsGood = true;
-            else
-                System.out.println("Vous n'avez pas choisi parmi les 3 classes proposées");
-        } while (!responseIsGood);
-        Player player = null;
-        switch (role    ) {
-            case 1:
-                player = new Warrior(playerNumber);
-
-                break;
-            case 2:
-                player = new Prowler(playerNumber);
-                break;
-            case 3:
-                player = new Wizard(playerNumber);
-                break;
-        }*/
         }
 
     public static Player createPlayer(int playerNumber) {
@@ -61,6 +35,28 @@ public class Main {
         } while (true);
      }
 
+    public static void attack(Player attacker, Player target) {
 
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Joueur "+attacker.getPlayerNumber()+" ("+ attacker.getLife()+" Vitalité) Veuillez choisir votre action (1 : Attaque Basique, 2 : Attaque Spéciale)");
+        int action = 0;
+        boolean responseIsGood = false;
+        do {
+            action = sc.nextInt();
+            switch (action) {
+                case 1:
+                     attacker.basicAttack(target);
+                     responseIsGood=true;
+                     break;
+                case 2:
+                    attacker.specialAttack(target);
+                    responseIsGood=true;
+                    break;
+                default:
+                    System.out.println("Vous n'avez pas choisi parmi les 2 actions proposées");
+            }
+        } while (!responseIsGood);
+    }
 
 }
