@@ -15,12 +15,13 @@ public class Warrior extends Player{
 
     @Override
     public void basicAttack(){
-        System.out.println("Attaque basique !");
+        System.out.println("attaque basique sur joueur ");
     }
 
     @Override
-    public void specialAttack(){
-        System.out.println("Attaque spéciale !");
+    public void specialAttack(Player target){
+
+        System.out.println(this.getPlayerNumber()+ " attaque spéciale sur joueur !"+target.getPlayerNumber());
     }
 
 

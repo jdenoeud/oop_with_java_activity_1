@@ -4,6 +4,10 @@
     <list default="true" id="e08a6084-e290-40b0-b081-00137d8a9ba1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ocr/justine/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ocr/justine/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ocr/justine/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ocr/justine/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ocr/justine/Prowler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ocr/justine/Prowler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ocr/justine/Warrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ocr/justine/Warrior.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ocr/justine/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ocr/justine/Wizard.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,14 +35,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6361" />
-          <entry key="PLAIN_TEXT" value="277" />
+          <entry key="JAVA" value="6992" />
+          <entry key="PLAIN_TEXT" value="325" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="6361" />
-          <entry key="txt" value="277" />
+          <entry key="java" value="6992" />
+          <entry key="txt" value="325" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -54,8 +58,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/ocr/justine/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="44" lean-forward="true" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+            <state relative-caret-position="420">
+              <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -63,8 +70,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ocr/justine/Prowler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
+            <state relative-caret-position="285">
+              <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
               <folding>
                 <element signature="e#86#87#0" expanded="true" />
                 <element signature="e#121#122#0" expanded="true" />
@@ -78,8 +85,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ocr/justine/Wizard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
+            <state relative-caret-position="300">
+              <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
               <folding>
                 <element signature="e#105#106#0" expanded="true" />
                 <element signature="e#140#141#0" expanded="true" />
@@ -108,13 +115,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ocr/justine/Warrior.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="24" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="24" />
+            <state relative-caret-position="345">
+              <caret line="23" column="54" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
               <folding>
                 <element signature="e#102#103#0" expanded="true" />
                 <element signature="e#137#138#0" expanded="true" />
-                <element signature="e#108#109#0" expanded="true" />
-                <element signature="e#163#164#0" expanded="true" />
+                <element signature="e#484#485#0" expanded="true" />
+                <element signature="e#523#524#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -123,8 +130,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ocr/justine/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="84" selection-start-line="84" selection-end-line="84" />
+            <state relative-caret-position="163">
+              <caret line="101" column="36" lean-forward="true" selection-start-line="101" selection-start-column="36" selection-end-line="101" selection-end-column="36" />
+              <folding>
+                <element signature="e#186#187#0" expanded="true" />
+                <element signature="e#221#222#0" expanded="true" />
+                <element signature="e#178#179#0" expanded="true" />
+                <element signature="e#205#206#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -150,19 +163,18 @@
         <option value="$PROJECT_DIR$/src/com/ocr/justine/Role.java" />
         <option value="$PROJECT_DIR$/src/com/ocr/justine/Play.java" />
         <option value="$PROJECT_DIR$/test/com/ocr/justine/PlayerTest.java" />
-        <option value="$PROJECT_DIR$/src/com/ocr/justine/Warrior.java" />
         <option value="$PROJECT_DIR$/src/com/ocr/justine/Player.java" />
-        <option value="$PROJECT_DIR$/src/com/ocr/justine/Wizard.java" />
         <option value="$PROJECT_DIR$/src/com/ocr/justine/Prowler.java" />
+        <option value="$PROJECT_DIR$/src/com/ocr/justine/Wizard.java" />
+        <option value="$PROJECT_DIR$/src/com/ocr/justine/Warrior.java" />
         <option value="$PROJECT_DIR$/src/com/ocr/justine/Main.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="680" />
-    <option name="y" value="25" />
-    <option name="width" value="680" />
-    <option name="height" value="743" />
+    <option name="x" value="1365" />
+    <option name="width" value="1682" />
+    <option name="height" value="1051" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -219,7 +231,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536489782701" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536496510841" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../MyMenu-I" />
@@ -387,7 +399,14 @@
       <option name="project" value="LOCAL" />
       <updated>1536488481596</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Improve instantiation of the children classes">
+      <created>1536489840518</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1536489840518</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -423,10 +442,10 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="25" width="1362" height="744" extended-state="6" />
+    <frame x="1365" y="0" width="1682" height="1051" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15601218" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.32436708" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -435,7 +454,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3681672" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.36876008" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39871383" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -445,7 +464,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3279743" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32636657" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info active="true" anchor="right" id="Ant Build" order="1" visible="true" weight="0.20073439" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
@@ -492,7 +511,12 @@
     <MESSAGE value="Add setters and constructor in Player" />
     <MESSAGE value="Tests ok for the setters and constructor" />
     <MESSAGE value="Add classes Warrior, Prowler and Wizard" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add classes Warrior, Prowler and Wizard" />
+    <MESSAGE value="Improve instantiation of the children classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improve instantiation of the children classes" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/test/com/ocr/justine/CharacterTest.java" />
@@ -536,15 +560,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ocr/justine/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="84" selection-start-line="84" selection-end-line="84" />
+        <state relative-caret-position="163">
+          <caret line="101" column="36" lean-forward="true" selection-start-line="101" selection-start-column="36" selection-end-line="101" selection-end-column="36" />
+          <folding>
+            <element signature="e#186#187#0" expanded="true" />
+            <element signature="e#221#222#0" expanded="true" />
+            <element signature="e#178#179#0" expanded="true" />
+            <element signature="e#205#206#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ocr/justine/Prowler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+          <folding>
+            <element signature="e#86#87#0" expanded="true" />
+            <element signature="e#121#122#0" expanded="true" />
+            <element signature="e#468#469#0" expanded="true" />
+            <element signature="e#523#524#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ocr/justine/Wizard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
+        <state relative-caret-position="300">
+          <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
           <folding>
             <element signature="e#105#106#0" expanded="true" />
             <element signature="e#140#141#0" expanded="true" />
@@ -556,25 +599,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ocr/justine/Warrior.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="24" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="24" />
+        <state relative-caret-position="345">
+          <caret line="23" column="54" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
           <folding>
             <element signature="e#102#103#0" expanded="true" />
             <element signature="e#137#138#0" expanded="true" />
-            <element signature="e#108#109#0" expanded="true" />
-            <element signature="e#163#164#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ocr/justine/Prowler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
-          <folding>
-            <element signature="e#86#87#0" expanded="true" />
-            <element signature="e#121#122#0" expanded="true" />
-            <element signature="e#468#469#0" expanded="true" />
+            <element signature="e#484#485#0" expanded="true" />
             <element signature="e#523#524#0" expanded="true" />
           </folding>
         </state>
@@ -582,8 +612,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ocr/justine/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="44" lean-forward="true" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+        <state relative-caret-position="420">
+          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

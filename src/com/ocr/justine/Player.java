@@ -7,6 +7,15 @@ public abstract class Player {
     Scanner sc = new Scanner(System.in);
 
     protected int level;
+
+    public int getPlayerNumber() {
+        return playerNumber;
+    }
+
+    public String getLife() {
+        return life + "Vitalité";
+    }
+
     protected int life;
     protected int strength;
     protected int agility;
@@ -92,8 +101,7 @@ public abstract class Player {
 
     public abstract void describe();
 
+    public abstract void specialAttack(Player cible);
+
     public abstract void basicAttack();
-
-    public abstract void specialAttack();
-
 }

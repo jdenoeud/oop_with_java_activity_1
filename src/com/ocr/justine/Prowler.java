@@ -17,7 +17,7 @@ public class Prowler extends Player{
     }
 
     @Override
-    public void specialAttack(){
+    public void specialAttack(Player cible){
         System.out.println("Attaque spéciale !");
     }
 
