@@ -10,7 +10,7 @@ class PlayerTest {
 
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 
-    @Test
+    /*@Test
     public void Given_1WarriorandPlayer1_when_creatingCharacter_Then_DisplayWarriorDescription() {
         Player player = new Player(1,0,10,0,0 );
         player.describe();
@@ -32,5 +32,5 @@ class PlayerTest {
         player.describe();
         String output = outContent.toString().replace("\r\n", "\n");
         assertEquals("Gollum je suis le Rôdeur Joueur 1 niveau 5 je possède 25 de vitalité, 10 de force, 0 d'agilité et 0 d'intelligence !\n", output);
-    }
+    }*/
 }

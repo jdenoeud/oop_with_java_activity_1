@@ -6,7 +6,9 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-       Play play = new Play();
-       play.askPlayer();
+      Player player1 = new Player(1);
+      player1.describe();
+      Player player2 = new Player(2);
+      player2.describe();
     }
 }
