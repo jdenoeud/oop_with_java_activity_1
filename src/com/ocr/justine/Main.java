@@ -27,9 +27,10 @@ public class Main {
 
         // This is the end
         if (player1.getLife() <= 0)
-            System.out.println("Joueur 1 a perdu");
+            System.out.println("Joueur " +
+                    "1 a perdu !");
         else
-            System.out.println("Joueur 2 a perdu");
+            System.out.println("Joueur 2 a perdu !");
     }
 
     public static Player createPlayer(int playerNumber) {

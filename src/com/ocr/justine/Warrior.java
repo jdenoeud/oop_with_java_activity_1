@@ -19,6 +19,8 @@ public class Warrior extends Player{
         target.setLife(target.getLife() - damagesTarget);
         System.out.println("Joueur "+this.getPlayerNumber()+" utilise Coup d'Epée et inflige "+damagesTarget+" dommages.");
         System.out.println("Joueur "+target.getPlayerNumber()+" perd "+ damagesTarget + " points de vie");
+        if (target.getLife()<=0)
+            System.out.println("Joueur "+target.getPlayerNumber()+" est mort");
     }
 
     @Override
@@ -29,7 +31,11 @@ public class Warrior extends Player{
         this.setLife(this.getLife()-damagesAttacker);
         System.out.println("Joueur "+this.getPlayerNumber()+" utilise Coup de Rage et inflige "+damagesTarget+" dommages.");
         System.out.println("Joueur "+target.getPlayerNumber()+" perd "+ damagesTarget + " points de vie");
+        if (target.getLife()<=0)
+            System.out.println("Joueur "+target.getPlayerNumber()+" est mort");
         System.out.println("Joueur "+this.getPlayerNumber()+" perd "+ damagesAttacker + " points de vie");
+        if (this.getLife()<=0)
+            System.out.println("Joueur "+this.getPlayerNumber()+" est mort");
     }
 
 

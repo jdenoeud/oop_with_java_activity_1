@@ -21,6 +21,8 @@ public class Wizard extends Player {
         target.setLife(target.getLife() - damagesTarget);
         System.out.println("Joueur "+this.getPlayerNumber()+" utilise Boule de Feu et inflige "+damagesTarget+" dommages.");
         System.out.println("Joueur "+target.getPlayerNumber()+" perd "+ damagesTarget + " points de vie");
+        if (target.getLife()<=0)
+            System.out.println("Joueur "+target.getPlayerNumber()+" est mort");
     }
 
     @Override

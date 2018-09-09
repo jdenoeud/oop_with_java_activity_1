@@ -49,11 +49,8 @@ public abstract class Player {
         this.intelligence = intelligence;
     }
 
-    public void setLevel(int level) throws PlayerExceptions {
-            if (level<1 || level>100)
-                throw new PlayerExceptions();
-            else
-                this.level = level;
+    public void setLevel(int level) {
+        this.level = level;
     }
 
     public void setLife(int life) {
@@ -64,12 +61,15 @@ public abstract class Player {
         do{
             System.out.println("Niveau du personnage ?");
             try{
-                int response = 0;
-                response = sc.nextInt();
-                setLevel(response);
+                int response = sc.nextInt();
+                if (response<1 || response>100) {
+                    System.out.println("La valeur rentrée n'est pas comprise entre 1 et 100");
+                    sc.next();
+                }
+                else {
+                    setLevel(response);
+                }
                 break;
-            } catch (PlayerExceptions e){
-                sc.next();
             }
             catch (InputMismatchException e) {
                 System.out.println("La valeur rentrée n'est pas un nombre entier");
@@ -124,9 +124,9 @@ public abstract class Player {
                 if ( (response + this.strength + this.agility) == this.level)
                     responseIsGood  = true;
                 else
-                    System.out.println("Le total force + agilité + intelligence doit être égal au niveau du joueur !");
+                    System.out.println("Le total force + agilité + intelligence doit être égal au niveau du joueur");
             else
-                System.out.println("La force doit être comprise entre 0 et 100 !");
+                System.out.println("La force doit être comprise entre 0 et 100");
         } while (!responseIsGood);
        setIntelligence(response);
     }
@@ -135,7 +135,7 @@ public abstract class Player {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Joueur " + this.getPlayerNumber() + " (" + this.getLife() +
-                           " Vitalité) veuillez choisir votre action (1 : Attaque Basique, 2 : Attaque Spéciale) :");
+                           " Vitalité) veuillez choisir votre action (1 : Attaque Basique, 2 : Attaque Spéciale)");
 
         do {
             switch (sc.nextInt()) {
