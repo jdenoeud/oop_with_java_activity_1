@@ -5,8 +5,6 @@ import java.util.Scanner;
 
 public class Main {
 
-
-
     public static void main(String[] args) {
         // Create Player
         Player player1 = createPlayer(1);

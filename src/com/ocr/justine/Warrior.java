@@ -21,7 +21,7 @@ public class Warrior extends Player{
     @Override
     public void specialAttack(Player target){
 
-        System.out.println(this.getPlayerNumber()+ " attaque spéciale sur joueur !"+target.getPlayerNumber());
+        System.out.println(this.getPlayerNumber()+ " attaque spéciale sur joueur "+target.getPlayerNumber());
     }
 
 

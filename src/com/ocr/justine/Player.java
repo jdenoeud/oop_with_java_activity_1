@@ -4,9 +4,17 @@ import java.util.Scanner;
 
 public abstract class Player {
 
-    Scanner sc = new Scanner(System.in);
+    protected int life;
 
+
+
+    protected int strength;
+    protected int agility;
+    protected int intelligence;
+    protected int playerNumber;
     protected int level;
+
+    Scanner sc = new Scanner(System.in);
 
     public int getPlayerNumber() {
         return playerNumber;
@@ -16,31 +24,45 @@ public abstract class Player {
         return life + "Vitalité";
     }
 
-    protected int life;
-    protected int strength;
-    protected int agility;
-    protected int intelligence;
-    protected int playerNumber;
-
-    private void setLevel() {
-        System.out.println("Niveau du personnage ?");
-        int response = 0;
-        boolean responseIsGood = false;
-        do{
-            response = sc.nextInt();
-            if (response >=1 && response <=100)
-                responseIsGood  = true;
-            else
-                System.out.println("Le niveau doit être compris entre 1 et 100");
-
-        } while ( !responseIsGood);
-        this.level = response;
+    public void setStrength(int strength) {
+        this.strength = strength;
     }
 
-    private void setStrength() {
-        System.out.println("Force du personnage ?");
+    public void setAgility(int agility) {
+        this.agility = agility;
+    }
+
+    public void setIntelligence(int intelligence) {
+        this.intelligence = intelligence;
+    }
+
+    public void setLevel(int level) {
+        this.level = level;
+    }
+
+    private void initLevel() {
+        int response = 0;
+
+        System.out.println("Niveau du personnage ?");
+        do{
+            response = sc.nextInt();
+            if (response >=1 && response <=100) {
+                setLevel(response);
+                break;
+            }
+            else {
+                System.out.println("Le niveau doit être compris entre 1 et 100");
+            }
+
+        } while (true);
+    }
+
+    private void initStrength() {
         int response = 0;
         boolean responseIsGood = false;
+
+        System.out.println("Force du personnage ?");
+
         do{
             response = sc.nextInt();
             if (response >=0 && response <=100)
@@ -51,10 +73,10 @@ public abstract class Player {
             else
                 System.out.println("La force doit être comprise entre 0 et 100");
         } while ( !responseIsGood);
-        this.strength = response;
+        setStrength(response);
     }
 
-    private void setAgility() {
+    private void initAgility() {
         System.out.println("Agilité du personnage ?");
         int response = 0;
         boolean responseIsGood = false;
@@ -68,10 +90,10 @@ public abstract class Player {
             else
                 System.out.println("La force doit être comprise entre 0 et 100");
         } while ( !responseIsGood);
-        this.agility = response;
+        setAgility(response);
     }
 
-    private void setIntelligence() {
+    private void initIntelligence() {
         System.out.println("Intelligence du personnage ?");
         int response = 0;
         boolean responseIsGood = false;
@@ -85,18 +107,17 @@ public abstract class Player {
             else
                 System.out.println("La force doit être comprise entre 0 et 100");
         } while ( !responseIsGood);
-       this.intelligence = response;
+       setIntelligence(response);
     }
 
 
     public Player( int playerNumber) {
         this.playerNumber = playerNumber;
-
-        this.setLevel();
+        this.initLevel();
         this.life = (this.level)*5;
-        this.setStrength();
-        this.setAgility();
-        this.setIntelligence();
+        this.initStrength();
+        this.initAgility();
+        this.initIntelligence();
     }
 
     public abstract void describe();
