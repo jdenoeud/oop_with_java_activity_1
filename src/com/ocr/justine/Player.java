@@ -29,7 +29,7 @@ public class Player {
         this.level = response;
     }
 
-    public void setStrength() {
+    private void setStrength() {
         System.out.println("Force du personnage ?");
         int response = 0;
         boolean responseIsGood = false;
@@ -46,7 +46,7 @@ public class Player {
         this.strength = response;
     }
 
-    public void setAgility() {
+    private void setAgility() {
         System.out.println("Agilité du personnage ?");
         int response = 0;
         boolean responseIsGood = false;
@@ -63,7 +63,7 @@ public class Player {
         this.agility = response;
     }
 
-    public void setIntelligence() {
+    private void setIntelligence() {
         System.out.println("Intelligence du personnage ?");
         int response = 0;
         boolean responseIsGood = false;
@@ -80,7 +80,7 @@ public class Player {
        this.intelligence = response;
     }
 
-    public void setRole() {
+    private void setRole() {
         System.out.println("Veuillez choisir la classe de votre personnage (1 : Guerrier, 2 : Rôdeur, 3 : Mage)");
         int response = 0;
         boolean responseIsGood = false;
@@ -117,7 +117,7 @@ public class Player {
                 break;
             case 2:
                 roleName = "Rôdeur";
-                playerName = "Rôdeur";
+                playerName = "Ark";
                 break;
             case 3:
                 roleName = "Mage";
@@ -125,21 +125,8 @@ public class Player {
                 break;
         }
         System.out.println(playerName +" je suis le "+ roleName +" Joueur "+this.playerNumber+" niveau "+this.level+" je possède "+this.life+" de vitalité, "+this.strength+" de force, "+this.agility+" d'agilité et "+this.intelligence+" d'intelligence !"
-        );
+       );
     }
 
-    private int askRole(){
-        System.out.println("Veuillez choisir la classe de votre personnage (1 : Guerrier, 2 : Rôdeur, 3 : Mage)");
-        int response = 0;
-        boolean responseIsGood = false;
-        do{
-            response = sc.nextInt();
-            if (response >=1 && response <=3)
-                responseIsGood  = true;
-            else
-                System.out.println("Vous n'avez pas choisi parmi les 3 classes");
 
-        } while ( !responseIsGood);
-        return response;
-    }
 }
