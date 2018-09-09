@@ -124,13 +124,32 @@ public abstract class Player {
                 if ( (response + this.strength + this.agility) == this.level)
                     responseIsGood  = true;
                 else
-                    System.out.println("Le total force + agilité + intelligence doit être égal au niveau du joueur");
+                    System.out.println("Le total force + agilité + intelligence doit être égal au niveau du joueur !");
             else
-                System.out.println("La force doit être comprise entre 0 et 100");
-        } while ( !responseIsGood);
+                System.out.println("La force doit être comprise entre 0 et 100 !");
+        } while (!responseIsGood);
        setIntelligence(response);
     }
 
+    public void attack(Player target) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Joueur " + this.getPlayerNumber() + " (" + this.getLife() +
+                           " Vitalité) veuillez choisir votre action (1 : Attaque Basique, 2 : Attaque Spéciale) :");
+
+        do {
+            switch (sc.nextInt()) {
+                case 1:
+                    this.basicAttack(target);
+                    return;
+                case 2:
+                    this.specialAttack(target);
+                    return;
+                default:
+                    System.out.println("Vous n'avez pas choisi parmi les 2 actions proposées");
+            }
+        } while (true);
+    }
 
     public Player( int playerNumber) {
         this.playerNumber = playerNumber;
