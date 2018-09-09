@@ -2,17 +2,16 @@ package com.ocr.justine;
 
 import java.util.Scanner;
 
-public class Player {
+public abstract class Player {
 
     Scanner sc = new Scanner(System.in);
 
-    private int level;
-    private int life;
-    private int strength;
-    private int agility;
-    private int intelligence;
-    private int role;
-    private int playerNumber;
+    protected int level;
+    protected int life;
+    protected int strength;
+    protected int agility;
+    protected int intelligence;
+    protected int playerNumber;
 
     private void setLevel() {
         System.out.println("Niveau du personnage ?");
@@ -80,26 +79,10 @@ public class Player {
        this.intelligence = response;
     }
 
-    private void setRole() {
-        System.out.println("Veuillez choisir la classe de votre personnage (1 : Guerrier, 2 : Rôdeur, 3 : Mage)");
-        int response = 0;
-        boolean responseIsGood = false;
-            do{
-            response = sc.nextInt();
-            if (response >=1 && response <=3)
-                responseIsGood  = true;
-            else
-                System.out.println("Vous n'avez pas choisi parmi les 3 classes proposées");
-
-        } while ( !responseIsGood);
-            this.role = response;
-    }
-
 
     public Player( int playerNumber) {
         this.playerNumber = playerNumber;
-        System.out.println("Création du personnage du Joueur "+ this.playerNumber);
-        this.setRole();
+
         this.setLevel();
         this.life = (this.level)*5;
         this.setStrength();
@@ -107,26 +90,10 @@ public class Player {
         this.setIntelligence();
     }
 
-    public void describe(){
-        String roleName = "";
-        String playerName = "";
-        switch (this.role) {
-            case 1:
-                roleName = "Guerrier";
-                playerName = "Woarg";
-                break;
-            case 2:
-                roleName = "Rôdeur";
-                playerName = "Ark";
-                break;
-            case 3:
-                roleName = "Mage";
-                playerName = "Abracadabra";
-                break;
-        }
-        System.out.println(playerName +" je suis le "+ roleName +" Joueur "+this.playerNumber+" niveau "+this.level+" je possède "+this.life+" de vitalité, "+this.strength+" de force, "+this.agility+" d'agilité et "+this.intelligence+" d'intelligence !"
-       );
-    }
+    public abstract void describe();
 
+    public abstract void basicAttack();
+
+    public abstract void specialAttack();
 
 }
