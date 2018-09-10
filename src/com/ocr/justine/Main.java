@@ -1,17 +1,18 @@
 package com.ocr.justine;
 
-import java.util.Scanner;
+
+import static java.nio.file.StandardOpenOption.APPEND;
 
 public class Main {
 
 
     public static void main(String[] args) {
+        CreatePlayer createPlayer = new CreatePlayer();
 
-        createPlayer(1);
         // Create players
-        Player player1 = createPlayer(1);
+        Player player1 = createPlayer.createPlayer(1);
         player1.describe();
-        Player player2 = createPlayer(2);
+        Player player2 = createPlayer.createPlayer(2);
         player2.describe();
 
         // Fight until the end
@@ -35,7 +36,7 @@ public class Main {
             System.out.println("Joueur 2 a perdu !");
     }
 
-    public static Player createPlayer(int playerNumber) {
+   /* public static Player createPlayer(int playerNumber) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Création du personnage du Joueur " + playerNumber);
         int role = sc.nextInt();
@@ -58,6 +59,24 @@ public class Main {
 
             }
      }
+
+     public static int initRole{
+        Scanner sc = new Scanner(System.in);
+        int role = 0;
+        boolean responseIsGood = false;
+        System.out.println("Veuillez choisir la classe de votre personnage (1 : Guerrier, 2 : Rôdeur, 3 : Mage)");
+        do{
+            role = sc.nextInt();
+            if (role < 1 || role > 3) {
+                System.out.println("Vous n'avez pas choisi parmi les 3 classes proposées");
+                sc.next();
+            } else {
+                responseIsGood = true;
+            }
+        } while (!responseIsGood);
+        return role;
+
+    }*/
 }
 
 

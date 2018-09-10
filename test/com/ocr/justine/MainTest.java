@@ -28,18 +28,17 @@ class MainTest {
     void main() {
     }
 
-
+    /*
     @Test
     void Given_Player1Warrior_When_CreatePlayer_Then_DisplayGoodDescription() {
         System.setIn(new ByteArrayInputStream("1\n10\n10\n0\n0\n".getBytes()));
         Main main = new Main();
-        main.createPlayer(1);
-        String[] output = outContent.toString().replace("\r\n", "\n").split("\n");
-        assertEquals("Niveau du personnage ?", output[1]);
+           String[] output = outContent.toString().replace("\r\n", "\n").split("\n");
+        assertEquals("Woarg je suis le Guerrier Joueur 1 niveau 10 je possède 50 de vitalité, 10 de force, 0 d'agilité et 0 d'intelligence !", output[2]);
 
     }
 
-    /*
+
         @Test
     void Given_BadValue_When_CreatePlayer_Then_DisplayGoodDescription() {
         System.setIn(new ByteArrayInputStream("1\n".getBytes()));
