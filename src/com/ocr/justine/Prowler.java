@@ -15,8 +15,8 @@ public class Prowler extends Player{
     @Override
     public void basicAttack(Player target){
         int damagesTarget = this.getAgility();
-        target.setAgility(target.getAgility() - damagesTarget);
-        System.out.println("Joueur "+this.getPlayerNumber()+" utilise Tir à l'arc et inflige "+damagesTarget+" dommages.");
+        target.setLife(target.getLife() - damagesTarget);
+        System.out.println("Joueur "+this.getPlayerNumber()+" utilise Tir à l'Arc et inflige "+damagesTarget+" dommages.");
         System.out.println("Joueur "+target.getPlayerNumber()+" perd "+ damagesTarget + " points de vie");
         if (target.getLife()<=0)
             System.out.println("Joueur "+target.getPlayerNumber()+" est mort");

@@ -55,7 +55,7 @@ class WarriorTest {
     @Test
     public void Given_WarriorAttackWizardAndWizardDie_when_WarriorBasicAttacl_Then_GetGoodLifeValues() {
         Warrior warrior = new Warrior(1,40,30,10,0);
-        Wizard target = new Wizard(2,5,0,10,5);
+        Wizard target = new Wizard(2,5,0,0,5);
         warrior.basicAttack(target);
         String[] output = outContent.toString().replace("\r\n", "\n").split("\n");
         assertEquals("Joueur 1 utilise Coup d'Epée et inflige 30 dommages.", output[0]);
@@ -66,7 +66,7 @@ class WarriorTest {
 
     //testing specialAttack
     @Test
-    public void Given_WarriorAttackWizardWithStrength20_when_WarriorBasicAttack_Then_GetGoodLifeValues() {
+    public void Given_WarriorAttackWizardWithStrength20_when_WarriorSpecialAttack_Then_GetGoodLifeValues() {
         Warrior warrior = new Warrior(1,40,20,10,10);
         Wizard target = new Wizard(2,20,0,10,10);
         warrior.specialAttack(target);
@@ -77,7 +77,7 @@ class WarriorTest {
     }
 
     @Test
-    public void Given_WarriorAttackWizardWithStrength20AndWizardDie_when_WarriorBasicAttack_Then_GetGoodLifeValues() {
+    public void Given_WarriorAttackWizardWithStrength20AndWizardDie_when_WarriorSpecialAttack_Then_GetGoodLifeValues() {
         Warrior warrior = new Warrior(1,40,20,10,10);
         Wizard target = new Wizard(2,5,0,5,5);
         warrior.specialAttack(target);
@@ -89,7 +89,7 @@ class WarriorTest {
     }
 
     @Test
-    public void Given_WarriorAttackWizardWithStrength20AndWarriorDie_when_WarriorBasicAttack_Then_GetGoodLifeValues() {
+    public void Given_WarriorAttackWizardWithStrength20AndWarriorDie_when_WarriorSpecialAttack_Then_GetGoodLifeValues() {
         Warrior warrior = new Warrior(1,10,10,0,0);
         Wizard target = new Wizard(2,10,0,0,10);
         warrior.setLife(5);
