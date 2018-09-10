@@ -58,7 +58,10 @@ public abstract class Player {
     }
 
 
-
+    /**
+     * Ask the player to choose an attack and launch the attack choosen
+     *  @param target the player attacked
+     */
     public void attack(Player target) {
         Scanner sc = new Scanner(System.in);
         int response = 0;
@@ -84,6 +87,14 @@ public abstract class Player {
         } while (!responseIsGood);
     }
 
+    /**
+     * Construct the player
+     * @param playerNumber Number of the player (1 or 2)
+     * @param level Level of the player (between 1 and 100)
+     * @param strength Strength of the player (between 0 and 100)
+     * @param agility Agility of the player (between 0 and 100)
+     * @param intelligence Intelligence of the player (between 0 and 100)
+     */
     public Player( int playerNumber, int level, int strength, int agility, int intelligence) {
         this.playerNumber = playerNumber;
         this.level = level;
@@ -94,10 +105,21 @@ public abstract class Player {
 
     }
 
-
+    /**
+     * Describe the player and specify the playerNumber,  role, level, life, strength, agility,and intelligence of the player
+     */
     public abstract void describe();
 
-    public abstract void specialAttack(Player cible);
 
+    /**
+     * Use the basic Attack to attack the other player
+     * @param target the player attacked
+     */
+    public abstract void specialAttack(Player target);
+
+    /**
+     * Use the Special Attack to attack the other player
+     * @param target the player attacked
+     */
     public abstract void basicAttack(Player target);
 }

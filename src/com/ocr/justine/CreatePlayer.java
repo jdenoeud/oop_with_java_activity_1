@@ -11,6 +11,11 @@ public class CreatePlayer {
     private int agility;
     private int intelligence;
 
+    /**
+     * Use init methods to create a new Player
+     * @param playerNumber numer of the player (1 or 2)
+     * @return a Player : Warrior, Prowler or Wizard
+     */
     public Player createPlayer(int playerNumber) {
         System.out.println("Création du personnage du Joueur " + playerNumber);
         this.initRole();
@@ -28,6 +33,9 @@ public class CreatePlayer {
            }
     }
 
+    /**
+     * Ask a Role value, verify it and set the attribute role
+     */
     private void initRole() {
         boolean responseIsGood = false;
         int response = 0;
@@ -47,6 +55,9 @@ public class CreatePlayer {
         this.role = response;
     }
 
+    /**
+     * Ask a level value, verify it and set the attribute : level
+     */
     private void initLevel() {
         boolean responseIsGood = false;
         int response = 0;
@@ -66,6 +77,9 @@ public class CreatePlayer {
         this.level = response;
     }
 
+    /**
+     * Ask a Strength value, verify it and set the attribute : strength
+     */
     private void initStrength() {
         boolean responseIsGood = false;
         int response = 0;
@@ -92,6 +106,9 @@ public class CreatePlayer {
         } while (!responseIsGood);
     }
 
+    /**
+     * Ask an agility value, verify it and set the attribute : agility
+     */
     private void initAgility() {
         boolean responseIsGood = false;
         int response = 0;
@@ -118,6 +135,9 @@ public class CreatePlayer {
         } while (!responseIsGood);
     }
 
+    /**
+     * Ask an intelligence value, verify it and set the attribute : intelligence
+     */
     private void initIntelligence() {
         boolean responseIsGood = false;
         int response = 0;
