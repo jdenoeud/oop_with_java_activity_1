@@ -43,14 +43,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="12965" />
-          <entry key="PLAIN_TEXT" value="783" />
+          <entry key="JAVA" value="13207" />
+          <entry key="PLAIN_TEXT" value="815" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="12965" />
-          <entry key="txt" value="783" />
+          <entry key="java" value="13207" />
+          <entry key="txt" value="815" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -63,7 +63,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ocr/justine/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
@@ -75,8 +75,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ocr/justine/CreatePlayer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="473">
-              <caret line="78" column="35" lean-forward="true" selection-start-line="78" selection-start-column="35" selection-end-line="78" selection-end-column="79" />
+            <state relative-caret-position="330">
+              <caret line="118" column="35" lean-forward="true" selection-start-line="118" selection-start-column="35" selection-end-line="118" selection-end-column="85" />
               <folding>
                 <element signature="e#4270#4271#0" expanded="true" />
                 <element signature="e#4297#4298#0" expanded="true" />
@@ -93,11 +93,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/com/ocr/justine/CreatePlayerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
-              <caret line="94" column="65" selection-start-line="94" selection-start-column="65" selection-end-line="94" selection-end-column="65" />
+            <state relative-caret-position="2190">
+              <caret line="150" column="71" selection-start-line="150" selection-start-column="71" selection-end-line="150" selection-end-column="71" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -287,7 +287,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536589764646" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536590676492" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../MyMenu-I" />
@@ -313,7 +313,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CreatePlayerTest">
+  <component name="RunManager" selected="JUnit.CreatePlayerTest.Given_WizardAndSumOfStrengthAgilityIntelligenceInferiorToLevel_When_CreatePlayer_Then_GetErrorMessage">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.ocr.justine.Main" />
       <module name="Activity_1" />
@@ -338,7 +338,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreatePlayerTest.Given_WarriorWithBadLevelValue_When_CreatePlayer_Then_GetErrorMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CreatePlayerTest.Given_WizardAndBadIntelligenceValue_When_CreatePlayer_Then_GetErrorMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Activity_1" />
       <extension name="coverage">
         <pattern>
@@ -348,13 +348,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.ocr.justine" />
       <option name="MAIN_CLASS_NAME" value="com.ocr.justine.CreatePlayerTest" />
-      <option name="METHOD_NAME" value="Given_WarriorWithBadLevelValue_When_CreatePlayer_Then_GetErrorMessage" />
+      <option name="METHOD_NAME" value="Given_WizardAndBadIntelligenceValue_When_CreatePlayer_Then_GetErrorMessage" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreatePlayerTest.Given_WizardAndStrengthValueSuperiortoLevelValue_When_CreatePlayer_Then_GetErrorMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CreatePlayerTest.Given_WizardAndStrengthAndAgiltyValueSuperiortoLevelValue_When_CreatePlayer_Then_GetErrorMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Activity_1" />
       <extension name="coverage">
         <pattern>
@@ -364,13 +364,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.ocr.justine" />
       <option name="MAIN_CLASS_NAME" value="com.ocr.justine.CreatePlayerTest" />
-      <option name="METHOD_NAME" value="Given_WizardAndStrengthValueSuperiortoLevelValue_When_CreatePlayer_Then_GetErrorMessage" />
+      <option name="METHOD_NAME" value="Given_WizardAndStrengthAndAgiltyValueSuperiortoLevelValue_When_CreatePlayer_Then_GetErrorMessage" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreatePlayerTest.Given_WizardWithLevel30AndStrengt10_When_CreatePlayer_Then_GetGoodStrength" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CreatePlayerTest.Given_WizardAndSumOfStrengthAgilityIntelligenceInferiorToLevel_When_CreatePlayer_Then_GetErrorMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Activity_1" />
       <extension name="coverage">
         <pattern>
@@ -380,7 +380,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.ocr.justine" />
       <option name="MAIN_CLASS_NAME" value="com.ocr.justine.CreatePlayerTest" />
-      <option name="METHOD_NAME" value="Given_WizardWithLevel30AndStrengt10_When_CreatePlayer_Then_GetGoodStrength" />
+      <option name="METHOD_NAME" value="Given_WizardAndSumOfStrengthAgilityIntelligenceInferiorToLevel_When_CreatePlayer_Then_GetErrorMessage" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -388,18 +388,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.CreatePlayerTest.Given_WarriorWithBadLevelValue_When_CreatePlayer_Then_GetErrorMessage" />
-      <item itemvalue="JUnit.CreatePlayerTest.Given_WizardWithLevel30AndStrengt10_When_CreatePlayer_Then_GetGoodStrength" />
-      <item itemvalue="JUnit.CreatePlayerTest.Given_WizardAndStrengthValueSuperiortoLevelValue_When_CreatePlayer_Then_GetErrorMessage" />
       <item itemvalue="JUnit.CreatePlayerTest" />
+      <item itemvalue="JUnit.CreatePlayerTest.Given_WizardAndStrengthAndAgiltyValueSuperiortoLevelValue_When_CreatePlayer_Then_GetErrorMessage" />
+      <item itemvalue="JUnit.CreatePlayerTest.Given_WizardAndBadIntelligenceValue_When_CreatePlayer_Then_GetErrorMessage" />
+      <item itemvalue="JUnit.CreatePlayerTest.Given_WizardAndSumOfStrengthAgilityIntelligenceInferiorToLevel_When_CreatePlayer_Then_GetErrorMessage" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CreatePlayerTest" />
+        <item itemvalue="JUnit.CreatePlayerTest.Given_WizardAndSumOfStrengthAgilityIntelligenceInferiorToLevel_When_CreatePlayer_Then_GetErrorMessage" />
+        <item itemvalue="JUnit.CreatePlayerTest.Given_WizardAndBadIntelligenceValue_When_CreatePlayer_Then_GetErrorMessage" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.CreatePlayerTest.Given_WizardAndStrengthValueSuperiortoLevelValue_When_CreatePlayer_Then_GetErrorMessage" />
-        <item itemvalue="JUnit.CreatePlayerTest.Given_WizardWithLevel30AndStrengt10_When_CreatePlayer_Then_GetGoodStrength" />
-        <item itemvalue="JUnit.CreatePlayerTest.Given_WarriorWithBadLevelValue_When_CreatePlayer_Then_GetErrorMessage" />
+        <item itemvalue="JUnit.CreatePlayerTest" />
+        <item itemvalue="JUnit.CreatePlayerTest.Given_WizardAndStrengthAndAgiltyValueSuperiortoLevelValue_When_CreatePlayer_Then_GetErrorMessage" />
       </list>
     </recent_temporary>
   </component>
@@ -561,25 +561,17 @@
       <option name="project" value="LOCAL" />
       <updated>1536589279182</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Add tests on initStrength and improve initStrength">
+      <created>1536589801546</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1536589801552</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CreatePlayerTest_Given_WarriorWithBadLevelValue_When_CreatePlayer_Then_GetErrorMessage - 2018.09.10 at 16h 14m 43s.xml">
-      <configuration name="CreatePlayerTest.Given_WarriorWithBadLevelValue_When_CreatePlayer_Then_GetErrorMessage" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CreatePlayerTest_Given_WarriorWithBadLevelValue_When_CreatePlayer_Then_GetErrorMessage - 2018.09.10 at 16h 17m 18s.xml">
-      <configuration name="CreatePlayerTest.Given_WarriorWithBadLevelValue_When_CreatePlayer_Then_GetErrorMessage" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CreatePlayerTest_Given_WarriorWithLevel20_When_CreatePlayer_Then_GetGoodLevel - 2018.09.10 at 16h 17m 44s.xml">
-      <configuration name="CreatePlayerTest.Given_WarriorWithLevel20_When_CreatePlayer_Then_GetGoodLevel" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CreatePlayerTest_Given_WarriorWithLevel20_When_CreatePlayer_Then_GetGoodLevel - 2018.09.10 at 16h 20m 37s.xml">
-      <configuration name="CreatePlayerTest.Given_WarriorWithLevel20_When_CreatePlayer_Then_GetGoodLevel" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CreatePlayerTest_Given_WarriorWithBadLevelValue_When_CreatePlayer_Then_GetErrorMessage - 2018.09.10 at 16h 20m 42s.xml">
-      <configuration name="CreatePlayerTest.Given_WarriorWithBadLevelValue_When_CreatePlayer_Then_GetErrorMessage" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CreatePlayerTest_Given_WizardWithLevel30AndStrengt10_When_CreatePlayer_Then_GetGoodStrength - 2018.09.10 at 16h 23m 23s.xml">
       <configuration name="CreatePlayerTest.Given_WizardWithLevel30AndStrengt10_When_CreatePlayer_Then_GetGoodStrength" configurationId="JUnit" />
     </history-entry>
@@ -594,6 +586,21 @@
     </history-entry>
     <history-entry file="CreatePlayerTest_Given_WizardAndStrengthValueSuperiortoLevelValue_When_CreatePlayer_Then_GetErrorMessage - 2018.09.10 at 16h 28m 35s.xml">
       <configuration name="CreatePlayerTest.Given_WizardAndStrengthValueSuperiortoLevelValue_When_CreatePlayer_Then_GetErrorMessage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CreatePlayerTest - 2018.09.10 at 16h 29m 28s.xml">
+      <configuration name="CreatePlayerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CreatePlayerTest_Given_ProwlerWithLevel30Strengt5Agility25_When_CreatePlayer_Then_GetGoodStrength - 2018.09.10 at 16h 32m 40s.xml">
+      <configuration name="CreatePlayerTest.Given_ProwlerWithLevel30Strengt5Agility25_When_CreatePlayer_Then_GetGoodStrength" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CreatePlayerTest_Given_WizardAndBadAgilityValue_When_CreatePlayer_Then_GetErrorMessage - 2018.09.10 at 16h 35m 04s.xml">
+      <configuration name="CreatePlayerTest.Given_WizardAndBadAgilityValue_When_CreatePlayer_Then_GetErrorMessage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CreatePlayerTest_Given_WizardAndBadAgilityValue_When_CreatePlayer_Then_GetErrorMessage - 2018.09.10 at 16h 35m 26s.xml">
+      <configuration name="CreatePlayerTest.Given_WizardAndBadAgilityValue_When_CreatePlayer_Then_GetErrorMessage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CreatePlayerTest_Given_WizardAndStrengthAndAgiltyValueSuperiortoLevelValue_When_CreatePlayer_Then_GetErrorMessage - 2018.09.10 at 16h 35m 34s.xml">
+      <configuration name="CreatePlayerTest.Given_WizardAndStrengthAndAgiltyValueSuperiortoLevelValue_When_CreatePlayer_Then_GetErrorMessage" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -710,7 +717,8 @@
     <MESSAGE value="Add init methods in createdPlayer" />
     <MESSAGE value="Add tests on initRole" />
     <MESSAGE value="Add tests on initLevel and improve initLevel" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add tests on initLevel and improve initLevel" />
+    <MESSAGE value="Add tests on initStrength and improve initStrength" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add tests on initStrength and improve initStrength" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -881,10 +889,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ocr/justine/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ocr/justine/CreatePlayer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="78" column="35" lean-forward="true" selection-start-line="78" selection-start-column="35" selection-end-line="78" selection-end-column="79" />
+        <state relative-caret-position="330">
+          <caret line="118" column="35" lean-forward="true" selection-start-line="118" selection-start-column="35" selection-end-line="118" selection-end-column="85" />
           <folding>
             <element signature="e#4270#4271#0" expanded="true" />
             <element signature="e#4297#4298#0" expanded="true" />
@@ -902,18 +917,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/com/ocr/justine/CreatePlayerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="94" column="65" selection-start-line="94" selection-start-column="65" selection-end-line="94" selection-end-column="65" />
+        <state relative-caret-position="2190">
+          <caret line="150" column="71" selection-start-line="150" selection-start-column="71" selection-end-line="150" selection-end-column="71" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ocr/justine/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>

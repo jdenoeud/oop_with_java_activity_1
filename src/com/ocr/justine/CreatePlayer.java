@@ -93,12 +93,10 @@ public class CreatePlayer {
                     this.agility = response;
                 } else {
                     System.out.println("Le total force + agilité + intelligence doit être égal au niveau du joueur");
-                    sc.next();
                 }
             }
             else {
                 System.out.println("L'agilité doit être comprise entre 0 et 100");
-                sc.next();
             }
         } while (!responseIsGood);
     }
@@ -115,12 +113,10 @@ public class CreatePlayer {
                 }
                 else {
                     System.out.println("Le total force + agilité + intelligence doit être égal au niveau du joueur");
-                    sc.next();
                 }
             }
             else {
                 System.out.println("L'intelligence doit être comprise entre 0 et 100");
-                sc.next();
             }
         } while (!responseIsGood);
     }

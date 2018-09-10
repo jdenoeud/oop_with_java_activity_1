@@ -88,7 +88,7 @@ class CreatePlayerTest {
 
     @Test
     void Given_WizardAndBadStrengthValue_When_CreatePlayer_Then_GetErrorMessage() {
-        System.setIn(new ByteArrayInputStream("1\n30\n200\n10\n10\n10\n".getBytes()));
+        System.setIn(new ByteArrayInputStream("3\n30\n200\n10\n10\n10\n".getBytes()));
         CreatePlayer createPlayer = new CreatePlayer();
         createPlayer.createPlayer(1);
         String[] output = outContent.toString().replace("\r\n", "\n").split("\n");
@@ -97,11 +97,67 @@ class CreatePlayerTest {
 
     @Test
     void Given_WizardAndStrengthValueSuperiortoLevelValue_When_CreatePlayer_Then_GetErrorMessage() {
-        System.setIn(new ByteArrayInputStream("1\n30\n60\n10\n10\n10\n".getBytes()));
+        System.setIn(new ByteArrayInputStream("3\n30\n60\n10\n10\n10\n".getBytes()));
         CreatePlayer createPlayer = new CreatePlayer();
         createPlayer.createPlayer(1);
         String[] output = outContent.toString().replace("\r\n", "\n").split("\n");
         assertEquals("Le total force + agilité + intelligence doit être égal au niveau du joueur", output[4]);
+    }
+
+    //tests on initAgility
+    @Test
+    void Given_ProwlerWithLevel30Strengt5Agility25_When_CreatePlayer_Then_GetGoodStrength() {
+        System.setIn(new ByteArrayInputStream("2\n30\n5\n25\n0\n".getBytes()));
+        CreatePlayer createPlayer = new CreatePlayer();
+        createPlayer.createPlayer(2);
+        String[] output = outContent.toString().replace("\r\n", "\n").split("\n");
+        assertEquals(25, createPlayer.getAgility());
+    }
+
+    @Test
+    void Given_WizardAndBadAgilityValue_When_CreatePlayer_Then_GetErrorMessage() {
+        System.setIn(new ByteArrayInputStream("2\n30\n5\n150\n25\n0\n".getBytes()));
+        CreatePlayer createPlayer = new CreatePlayer();
+        createPlayer.createPlayer(1);
+        String[] output = outContent.toString().replace("\r\n", "\n").split("\n");
+        assertEquals("L'agilité doit être comprise entre 0 et 100", output[5]);
+    }
+
+    @Test
+    void Given_WizardAndStrengthAndAgiltyValueSuperiortoLevelValue_When_CreatePlayer_Then_GetErrorMessage() {
+        System.setIn(new ByteArrayInputStream("2\n30\n5\n50\n25\n0\n".getBytes()));
+        CreatePlayer createPlayer = new CreatePlayer();
+        createPlayer.createPlayer(1);
+        String[] output = outContent.toString().replace("\r\n", "\n").split("\n");
+        assertEquals("Le total force + agilité + intelligence doit être égal au niveau du joueur", output[5]);
+    }
+
+    //tests on initIntelligence
+    @Test
+    void Given_WarriorWithLevel40Strengt20Agility10Intelligence10_When_CreatePlayer_Then_GetGoodStrength() {
+        System.setIn(new ByteArrayInputStream("1\n40\n20\n10\n10\n".getBytes()));
+        CreatePlayer createPlayer = new CreatePlayer();
+        createPlayer.createPlayer(2);
+        String[] output = outContent.toString().replace("\r\n", "\n").split("\n");
+        assertEquals(10, createPlayer.getIntelligence());
+    }
+
+    @Test
+    void Given_WizardAndBadIntelligenceValue_When_CreatePlayer_Then_GetErrorMessage() {
+        System.setIn(new ByteArrayInputStream("1\n40\n20\n10\n150\n10\n".getBytes()));
+        CreatePlayer createPlayer = new CreatePlayer();
+        createPlayer.createPlayer(1);
+        String[] output = outContent.toString().replace("\r\n", "\n").split("\n");
+        assertEquals("L'intelligence doit être comprise entre 0 et 100", output[6]);
+    }
+
+    @Test
+    void Given_WizardAndSumOfStrengthAgilityIntelligenceInferiorToLevel_When_CreatePlayer_Then_GetErrorMessage() {
+        System.setIn(new ByteArrayInputStream("1\n40\n20\n10\n5\n10\n".getBytes()));
+        CreatePlayer createPlayer = new CreatePlayer();
+        createPlayer.createPlayer(1);
+        String[] output = outContent.toString().replace("\r\n", "\n").split("\n");
+        assertEquals("Le total force + agilité + intelligence doit être égal au niveau du joueur", output[6]);
     }
 
 
