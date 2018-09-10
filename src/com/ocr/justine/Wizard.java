@@ -29,14 +29,18 @@ public class Wizard extends Player {
     public void specialAttack(Player cible){
         int newLifeValue = this.getLife()+ this.getIntelligence()*2;
         int bonus;
-        if (newLifeValue < maxLife){
+        if (newLifeValue < this.maxLife){
             bonus = this.getIntelligence()*2;
+            System.out.println("Joueur "+this.getPlayerNumber()+" utilise Soin et gagne "+bonus+" en vitalité.");
+            this.setLife(newLifeValue);
         }
         else {
-            bonus = maxLife - newLifeValue;
+            bonus= this.maxLife - this.getLife();
+            System.out.println("Joueur "+this.getPlayerNumber()+" utilise Soin et gagne "+bonus+" en vitalité.");
+            this.setLife(maxLife);
         }
-        this.setLife(this.getLife()+bonus);
-        System.out.println("Joueur "+this.getPlayerNumber()+" utilise Soin et gagne "+bonus+" en vitalité.");
+
+
 
     }
 }
