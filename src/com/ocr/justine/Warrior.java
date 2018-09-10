@@ -3,8 +3,8 @@ package com.ocr.justine;
 public class Warrior extends Player{
 
 
-    public Warrior(int playerNumber) {
-        super(playerNumber);
+    public Warrior( int playerNumber, int level, int strength, int agility, int intelligence) {
+        super(playerNumber, level, strength, agility, intelligence);
     }
 
     @Override

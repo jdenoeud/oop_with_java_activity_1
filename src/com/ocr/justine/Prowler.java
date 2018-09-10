@@ -1,8 +1,9 @@
 package com.ocr.justine;
 
 public class Prowler extends Player{
-    public Prowler(int playerNumber) {
-        super(playerNumber);
+
+    public Prowler( int playerNumber, int level, int strength, int agility, int intelligence) {
+        super(playerNumber, level, strength, agility, intelligence);
     }
 
     @Override

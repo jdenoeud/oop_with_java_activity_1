@@ -4,8 +4,8 @@ public class Wizard extends Player {
 
     private int maxLife ;
 
-    public Wizard(int playerNumber) {
-        super(playerNumber);
+    public Wizard( int playerNumber, int level, int strength, int agility, int intelligence) {
+        super(playerNumber, level, strength, agility, intelligence);
         this.maxLife = this.life;
     }
 
