@@ -32,8 +32,8 @@ class PlayerTest {
            Warrior player = new Warrior(1);
            player.describe();
            String[] output = outContent.toString().replace("\r\n", "\n").split("\n");
-           //assertEquals("Woarg je suis le Guerrier Joueur 1 niveau 10 je possède 50 de vitalité, 10 de force, 0 d'agilité et 0 d'intelligence !", output[4]);
-           assertEquals(1, 1);
+           assertEquals("Woarg je suis le Guerrier Joueur 1 niveau 10 je possède 50 de vitalité, 10 de force, 0 d'agilité et 0 d'intelligence !", output[4]);
+
     }
 
    @Test

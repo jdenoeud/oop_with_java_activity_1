@@ -8,8 +8,8 @@ public class Main {
     public static void main(String[] args) {
         // Create players
         Player player1 = createPlayer(1);
-        Player player2 = createPlayer(2);
         player1.describe();
+        Player player2 = createPlayer(2);
         player2.describe();
 
         // Fight until the end
@@ -38,8 +38,8 @@ public class Main {
         System.out.println("Création du personnage du Joueur " + playerNumber);
         System.out.println("Veuillez choisir la classe de votre personnage (1 : Guerrier, 2 : Rôdeur, 3 : Mage)");
         int role = 0;
+        role = sc.nextInt();
         do {
-            role = sc.nextInt();
             switch (role) {
                 case 1:
                     return new Warrior(playerNumber);
@@ -49,6 +49,9 @@ public class Main {
                     return new Wizard(playerNumber);
                 default:
                     System.out.println("Vous n'avez pas choisi parmi les 3 classes proposées");
+                    role = sc.nextInt();
+                    //sc.next();
+                    //break;
             }
         } while (true);
      }

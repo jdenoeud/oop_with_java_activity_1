@@ -60,7 +60,7 @@ public abstract class Player {
     private void initLevel() {
         do{
             System.out.println("Niveau du personnage ?");
-            try{
+            //try{
                 int response = sc.nextInt();
                 if (response<1 || response>100) {
                     System.out.println("La valeur rentrée n'est pas comprise entre 1 et 100");
@@ -70,11 +70,11 @@ public abstract class Player {
                     setLevel(response);
                 }
                 break;
-            }
-            catch (InputMismatchException e) {
-                System.out.println("La valeur rentrée n'est pas un nombre entier");
+           // }
+            /*catch (InputMismatchException e) {
+                 System.out.println("La valeur rentrée n'est pas un nombre entier");
                 sc.next();
-            }
+           }*/
         } while (true);
     }
 
@@ -151,14 +151,16 @@ public abstract class Player {
         } while (true);
     }
 
-    public Player( int playerNumber) {
+    public Player( int playerNumber, int level, int strength, int agility, int intelligence) {
         this.playerNumber = playerNumber;
-        this.initLevel();
+        this.level = level;
         this.life = (this.level)*5;
-        this.initStrength();
-        this.initAgility();
-        this.initIntelligence();
+        this.strength=strength;
+        this.agility = agility;
+        this.intelligence = intelligence;
+
     }
+
 
     public abstract void describe();
 
