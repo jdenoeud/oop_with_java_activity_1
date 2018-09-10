@@ -4,7 +4,10 @@ import java.util.Scanner;
 
 public class CreatePlayer {
     Scanner sc = new Scanner(System.in);
-    public int role;
+
+
+
+    private int role;
     private int level;
     private int strength;
     private int agility;
@@ -43,16 +46,20 @@ public class CreatePlayer {
     }
 
     private void initLevel() {
+        boolean responseIsGood = false;
+        int response = 0;
         do {
             System.out.println("Niveau du personnage ?");
-            int response = sc.nextInt();
+            response = sc.nextInt();
             if (response < 1 || response > 100) {
-                System.out.println("La valeur rentrée n'est pas comprise entre 1 et 100");
-             } else {
-                this.level = response;
+                System.out.println("Le niveau doit être compris entre 1 et 100");
+            } else {
+                responseIsGood = true;
             }
-            break;
-        } while (true);
+        } while (!responseIsGood);
+        this.level = response;
+
+
     }
 
 
@@ -67,10 +74,12 @@ public class CreatePlayer {
                     this.strength = response;
                 } else {
                     System.out.println("Le total force + agilité + intelligence doit être égal au niveau du joueur");
+                    sc.next();
                  }
             }
             else {
                 System.out.println("La force doit être comprise entre 0 et 100");
+                sc.next();
             }
         } while (!responseIsGood);
 
@@ -91,7 +100,7 @@ public class CreatePlayer {
                 }
             }
             else {
-                System.out.println("La force doit être comprise entre 0 et 100");
+                System.out.println("L'agilité doit être comprise entre 0 et 100");
                 sc.next();
             }
         } while (!responseIsGood);
@@ -113,11 +122,31 @@ public class CreatePlayer {
                 }
             }
             else {
-                System.out.println("La force doit être comprise entre 0 et 100");
+                System.out.println("L'intelligence doit être comprise entre 0 et 100");
                 sc.next();
             }
         } while (!responseIsGood);
     }
+
+        public int getRole() {
+            return role;
+        }
+
+        public int getLevel() {
+            return level;
+        }
+
+        public int getStrength() {
+            return strength;
+        }
+
+        public int getAgility() {
+            return agility;
+        }
+
+        public int getIntelligence() {
+            return intelligence;
+        }
 
 
 }

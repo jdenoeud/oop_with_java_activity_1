@@ -30,34 +30,70 @@ class CreatePlayerTest {
 
     //testing initRole
     @Test
-    void Given_Player1IsAWarrior_When_CreatePlayer_GetGoodRoleNumber() {
+    void Given_Warrior_When_CreatePlayer_GetGoodRoleNumber() {
         System.setIn(new ByteArrayInputStream("1\n10\n10\n0\n0\n".getBytes()));
         CreatePlayer createPlayer = new CreatePlayer();
         createPlayer.createPlayer(1);
         String[] output = outContent.toString().replace("\r\n", "\n").split("\n");
-        assertEquals(1, createPlayer.role);
+        assertEquals(1, createPlayer.getRole());
     }
 
     @Test
-    void Given_Player2IsAProwler_When_CreatePlayer_GetGoodRoleNumber() {
+    void Given_Prowler_When_CreatePlayer_GetGoodRoleNumber() {
         System.setIn(new ByteArrayInputStream("2\n10\n10\n0\n0\n".getBytes()));
         CreatePlayer createPlayer = new CreatePlayer();
         createPlayer.createPlayer(2);
         String[] output = outContent.toString().replace("\r\n", "\n").split("\n");
-        assertEquals(2, createPlayer.role);
+        assertEquals(2, createPlayer.getRole());
     }
 
     @Test
-    void Given_BadValueOfRole_When_CreatePlayer_GetErrorMessage() {
+    void Given_BadRoleValue_When_CreatePlayer_Then_GetErrorMessage() {
         System.setIn(new ByteArrayInputStream("5\n2\n10\n10\n0\n0\n".getBytes()));
         CreatePlayer createPlayer = new CreatePlayer();
         createPlayer.createPlayer(2);
         String[] output = outContent.toString().replace("\r\n", "\n").split("\n");
         assertEquals("Vous n'avez pas choisi parmi les 3 classes proposées", output[2]);
+        assertEquals("Niveau du personnage ?", output[4]);
     }
 
+    //tests on initLevel
+    @Test
+    void Given_WarriorWithLevel20_When_CreatePlayer_Then_GetGoodLevel() {
+        System.setIn(new ByteArrayInputStream("1\n20\n10\n10\n0\n".getBytes()));
+        CreatePlayer createPlayer = new CreatePlayer();
+        createPlayer.createPlayer(1);
+        String[] output = outContent.toString().replace("\r\n", "\n").split("\n");
+        assertEquals(20, createPlayer.getLevel());
+    }
 
-    //test initRole
+    @Test
+    void Given_WarriorWithBadLevelValue_When_CreatePlayer_Then_GetErrorMessage() {
+        System.setIn(new ByteArrayInputStream("1\n200\n10\n10\n0\n0\n".getBytes()));
+        CreatePlayer createPlayer = new CreatePlayer();
+        createPlayer.createPlayer(1);
+        String[] output = outContent.toString().replace("\r\n", "\n").split("\n");
+        assertEquals("Le niveau doit être compris entre 1 et 100", output[3]);
+    }
+
+    //tests on initLevel
+    @Test
+    void Given_WarriorWithLevel20_When_CreatePlayer_Then_GetGoodLevel() {
+        System.setIn(new ByteArrayInputStream("1\n20\n10\n10\n0\n".getBytes()));
+        CreatePlayer createPlayer = new CreatePlayer();
+        createPlayer.createPlayer(1);
+        String[] output = outContent.toString().replace("\r\n", "\n").split("\n");
+        assertEquals(20, createPlayer.getLevel());
+    }
+
+    @Test
+    void Given_WarriorWithBadLevelValue_When_CreatePlayer_Then_GetErrorMessage() {
+        System.setIn(new ByteArrayInputStream("1\n200\n10\n10\n0\n0\n".getBytes()));
+        CreatePlayer createPlayer = new CreatePlayer();
+        createPlayer.createPlayer(1);
+        String[] output = outContent.toString().replace("\r\n", "\n").split("\n");
+        assertEquals("Le niveau doit être compris entre 1 et 100", output[3]);
+    }
 
 
 
