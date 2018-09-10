@@ -5,9 +5,6 @@ import java.util.Scanner;
 
 public class CreatePlayer {
     Scanner sc = new Scanner(System.in);
-
-
-
     private int role;
     private int level;
     private int strength;
@@ -42,8 +39,7 @@ public class CreatePlayer {
             } catch (InputMismatchException e){
                 sc.next();
                 responseIsGood=false;
-                System.out.println("Exception");
-            }
+             }
            if (!responseIsGood)
                System.out.println("Vous n'avez pas choisi parmi les 3 classes proposées");
 
@@ -56,28 +52,37 @@ public class CreatePlayer {
         int response = 0;
         do {
             System.out.println("Niveau du personnage ?");
-            response = sc.nextInt();
-            if (response < 1 || response > 100) {
-                System.out.println("Le niveau doit être compris entre 1 et 100");
-            } else {
-                responseIsGood = true;
+            try {
+                response = sc.nextInt();
+                responseIsGood = (response>=1 && response <=100);
+            } catch (InputMismatchException e) {
+                sc.next();
+                responseIsGood = false;
             }
+            if (!responseIsGood)
+                System.out.println("Le niveau doit être compris entre 1 et 100");
+
         } while (!responseIsGood);
         this.level = response;
-
-
     }
 
     private void initStrength() {
         boolean responseIsGood = false;
+        int response = 0;
         do {
             System.out.println("Force du personnage ?");
-            int response = sc.nextInt();
-            if (response >= 0 && response <= 100) {
+            try {
+                response = sc.nextInt();
+                responseIsGood = (response>=0 && response <=100);
+            } catch (InputMismatchException e) {
+                sc.next();
+                responseIsGood = false;
+            }
+            if (responseIsGood) {
                 if (response <= this.level) {
-                    responseIsGood = true;
                     this.strength = response;
                 } else {
+                    responseIsGood=false;
                     System.out.println("Le total force + agilité + intelligence doit être égal au niveau du joueur");
                  }
             }
@@ -85,23 +90,29 @@ public class CreatePlayer {
                 System.out.println("La force doit être comprise entre 0 et 100");
             }
         } while (!responseIsGood);
-
     }
 
     private void initAgility() {
         boolean responseIsGood = false;
+        int response = 0;
         do {
             System.out.println("Agilité du personnage ?");
-            int response = sc.nextInt();
-            if (response >= 0 && response <= 100) {
+            try {
+                response = sc.nextInt();
+                responseIsGood = (response >= 0 && response <= 100);
+            } catch (InputMismatchException e) {
+                sc.next();
+                responseIsGood = false;
+            }
+            if (responseIsGood) {
                 if ((response + this.strength) <= this.level) {
-                    responseIsGood = true;
                     this.agility = response;
                 } else {
                     System.out.println("Le total force + agilité + intelligence doit être égal au niveau du joueur");
+                    responseIsGood=false;
                 }
             }
-            else {
+            else{
                 System.out.println("L'agilité doit être comprise entre 0 et 100");
             }
         } while (!responseIsGood);
@@ -109,15 +120,22 @@ public class CreatePlayer {
 
     private void initIntelligence() {
         boolean responseIsGood = false;
+        int response = 0;
         do {
             System.out.println("Intelligence du personnage ?");
-            int response = sc.nextInt();
-            if (response >= 0 && response <= 100) {
+            try{
+                response = sc.nextInt();
+                responseIsGood = (response >= 0 && response <= 100);
+            } catch (InputMismatchException e) {
+                sc.next();
+                responseIsGood = false;
+            }
+            if (responseIsGood) {
                 if ((response + this.strength + this.agility) == this.level) {
-                    responseIsGood = true;
                     this.intelligence =  response;
                 }
                 else {
+                    responseIsGood = false;
                     System.out.println("Le total force + agilité + intelligence doit être égal au niveau du joueur");
                 }
             }
