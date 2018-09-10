@@ -11,7 +11,7 @@ public abstract class Player {
     protected int intelligence;
     protected int playerNumber;
     protected int level;
-    Scanner sc = new Scanner(System.in);
+
 
     public int getStrength() {
         return strength;
@@ -57,79 +57,7 @@ public abstract class Player {
         this.life = life;
     }
 
-    private void initLevel() {
-        do{
-            System.out.println("Niveau du personnage ?");
-            //try{
-                int response = sc.nextInt();
-                if (response<1 || response>100) {
-                    System.out.println("La valeur rentrée n'est pas comprise entre 1 et 100");
-                    sc.next();
-                }
-                else {
-                    setLevel(response);
-                }
-                break;
-           // }
-            /*catch (InputMismatchException e) {
-                 System.out.println("La valeur rentrée n'est pas un nombre entier");
-                sc.next();
-           }*/
-        } while (true);
-    }
 
-    private void initStrength() {
-        int response = 0;
-        boolean responseIsGood = false;
-
-        System.out.println("Force du personnage ?");
-
-        do{
-            response = sc.nextInt();
-            if (response >=0 && response <=100)
-                if (response <= this.level)
-                    responseIsGood  = true;
-                else
-                    System.out.println("Le total force + agilité + intelligence doit être égal au niveau du joueur");
-            else
-                System.out.println("La force doit être comprise entre 0 et 100");
-        } while ( !responseIsGood);
-        setStrength(response);
-    }
-
-    private void initAgility() {
-        System.out.println("Agilité du personnage ?");
-        int response = 0;
-        boolean responseIsGood = false;
-        do{
-            response = sc.nextInt();
-            if (response >=0 && response <=100)
-                if ( (response + this.strength) <= this.level)
-                    responseIsGood  = true;
-                else
-                    System.out.println("Le total force + agilité + intelligence doit être égal au niveau du joueur");
-            else
-                System.out.println("La force doit être comprise entre 0 et 100");
-        } while ( !responseIsGood);
-        setAgility(response);
-    }
-
-    private void initIntelligence() {
-        System.out.println("Intelligence du personnage ?");
-        int response = 0;
-        boolean responseIsGood = false;
-        do{
-            response = sc.nextInt();
-            if (response >=0 && response <=100)
-                if ( (response + this.strength + this.agility) == this.level)
-                    responseIsGood  = true;
-                else
-                    System.out.println("Le total force + agilité + intelligence doit être égal au niveau du joueur");
-            else
-                System.out.println("La force doit être comprise entre 0 et 100");
-        } while (!responseIsGood);
-       setIntelligence(response);
-    }
 
     public void attack(Player target) {
         Scanner sc = new Scanner(System.in);

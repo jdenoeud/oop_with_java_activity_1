@@ -26,7 +26,7 @@ class PlayerTest {
         System.setOut(System.out);
     }
 
-    @Test
+    /*@Test
     public void Given_WarriorLevel10Strength10Agility0Intelligence0_when_creatingPlayer1_Then_DisplayGoodDescription() {
            System.setIn(new ByteArrayInputStream("10\n10\n0\n0\n".getBytes()));
            Warrior player = new Warrior(1);
@@ -45,14 +45,6 @@ class PlayerTest {
        assertEquals("Abracadabra je suis le Mage Joueur 2 niveau 10 je possède 50 de vitalité, 0 de force, 0 d'agilité et 10 d'intelligence !", output[4]);
     }
 
-    /*
-    @Test
-    public void Given_BadValueOfRole_when_creatingPlayer_Then_DisplayErrorMessage() {
-        System.setIn(new ByteArrayInputStream("5\n1\n10\n10\n0\n0\n".getBytes()));
-        Player player = new Warrior(2);
-        String[] output = outContent.toString().replace("\r\n", "\n").split("\n");
-        assertEquals("Vous n'avez pas choisi parmi les 3 classes proposées", output);
-    }*/
 
     @Test
     public void Given_BadValueOfLevel_when_creatingPlayer1_Then_DisplayErrorMessage() {
@@ -84,7 +76,7 @@ class PlayerTest {
         Player player = new Warrior(2);
         String[] output = outContent.toString().replace("\r\n", "\n").split("\n");
         assertEquals("Le total force + agilité + intelligence doit être égal au niveau du joueur", output[4]);
-    }
+    }*/
 
 
 
