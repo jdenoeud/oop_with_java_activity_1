@@ -46,6 +46,16 @@ class CreatePlayerTest {
     }
 
     @Test
+    void Given_NegativeValueOfRole_When_CreatePlayer_Then_GetErrorMessage() {
+        System.setIn(new ByteArrayInputStream("-2.5\n2\n10\n10\n0\n0\n".getBytes()));
+        CreatePlayer createPlayer = new CreatePlayer();
+        createPlayer.createPlayer(2);
+        String[] output = outContent.toString().replace("\r\n", "\n").split("\n");
+        assertEquals("Vous n'avez pas choisi parmi les 3 classes proposées", output[2]);
+        assertEquals("Niveau du personnage ?", output[4]);
+    }
+
+    @Test
     void Given_BadRoleValue_When_CreatePlayer_Then_GetErrorMessage() {
         System.setIn(new ByteArrayInputStream("5\n2\n10\n10\n0\n0\n".getBytes()));
         CreatePlayer createPlayer = new CreatePlayer();
@@ -74,6 +84,15 @@ class CreatePlayerTest {
         assertEquals("Le niveau doit être compris entre 1 et 100", output[3]);
     }
 
+    @Test
+    void Given_WarriorWithNegativeLevelValue_When_CreatePlayer_Then_GetErrorMessage() {
+        System.setIn(new ByteArrayInputStream("1\n-5.3\n10\n10\n0\n0\n".getBytes()));
+        CreatePlayer createPlayer = new CreatePlayer();
+        createPlayer.createPlayer(1);
+        String[] output = outContent.toString().replace("\r\n", "\n").split("\n");
+        assertEquals("Le niveau doit être compris entre 1 et 100", output[3]);
+    }
+
     //tests on initStrength
     @Test
     void Given_WizardWithLevel30AndStrengt10_When_CreatePlayer_Then_GetGoodStrength() {
@@ -87,6 +106,15 @@ class CreatePlayerTest {
     @Test
     void Given_WizardAndBadStrengthValue_When_CreatePlayer_Then_GetErrorMessage() {
         System.setIn(new ByteArrayInputStream("3\n30\n200\n10\n10\n10\n".getBytes()));
+        CreatePlayer createPlayer = new CreatePlayer();
+        createPlayer.createPlayer(1);
+        String[] output = outContent.toString().replace("\r\n", "\n").split("\n");
+        assertEquals("La force doit être comprise entre 0 et 100", output[4]);
+    }
+
+    @Test
+    void Given_WizardAndNotIntegerStrengthValue_When_CreatePlayer_Then_GetErrorMessage() {
+        System.setIn(new ByteArrayInputStream("3\n30\n-5.6\n10\n10\n10\n".getBytes()));
         CreatePlayer createPlayer = new CreatePlayer();
         createPlayer.createPlayer(1);
         String[] output = outContent.toString().replace("\r\n", "\n").split("\n");
@@ -122,6 +150,15 @@ class CreatePlayerTest {
     }
 
     @Test
+    void Given_WizardAndNotIntegerAgilityValue_When_CreatePlayer_Then_GetErrorMessage() {
+        System.setIn(new ByteArrayInputStream("2\n30\n5\n4.55\n25\n0\n".getBytes()));
+        CreatePlayer createPlayer = new CreatePlayer();
+        createPlayer.createPlayer(1);
+        String[] output = outContent.toString().replace("\r\n", "\n").split("\n");
+        assertEquals("L'agilité doit être comprise entre 0 et 100", output[5]);
+    }
+
+    @Test
     void Given_WizardAndStrengthAndAgiltyValueSuperiortoLevelValue_When_CreatePlayer_Then_GetErrorMessage() {
         System.setIn(new ByteArrayInputStream("2\n30\n5\n50\n25\n0\n".getBytes()));
         CreatePlayer createPlayer = new CreatePlayer();
@@ -143,6 +180,15 @@ class CreatePlayerTest {
     @Test
     void Given_WizardAndBadIntelligenceValue_When_CreatePlayer_Then_GetErrorMessage() {
         System.setIn(new ByteArrayInputStream("1\n40\n20\n10\n150\n10\n".getBytes()));
+        CreatePlayer createPlayer = new CreatePlayer();
+        createPlayer.createPlayer(1);
+        String[] output = outContent.toString().replace("\r\n", "\n").split("\n");
+        assertEquals("L'intelligence doit être comprise entre 0 et 100", output[6]);
+    }
+
+    @Test
+    void Given_WizardAndNotIntegerForIntelligenceValue_When_CreatePlayer_Then_GetErrorMessage() {
+        System.setIn(new ByteArrayInputStream("1\n40\n20\n10\n8.996\n10\n".getBytes()));
         CreatePlayer createPlayer = new CreatePlayer();
         createPlayer.createPlayer(1);
         String[] output = outContent.toString().replace("\r\n", "\n").split("\n");
