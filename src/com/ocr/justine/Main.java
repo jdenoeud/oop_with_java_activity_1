@@ -7,9 +7,9 @@ public class Main {
 
 
     public static void main(String[] args) {
-        CreatePlayer createPlayer = new CreatePlayer();
 
         // Create players
+        CreatePlayer createPlayer = new CreatePlayer();
         Player player1 = createPlayer.createPlayer(1);
         player1.describe();
         Player player2 = createPlayer.createPlayer(2);

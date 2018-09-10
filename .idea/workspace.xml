@@ -5,23 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e08a6084-e290-40b0-b081-00137d8a9ba1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/out/production/Activity_1/com/ocr/justine/CreatePlayer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Activity_1/com/ocr/justine/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Activity_1/com/ocr/justine/Player.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Activity_1/com/ocr/justine/Prowler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Activity_1/com/ocr/justine/Warrior.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Activity_1/com/ocr/justine/Wizard.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/Activity_1/com/ocr/justine/CreatePlayerTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/Activity_1/com/ocr/justine/PlayerTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/Activity_1/com/ocr/justine/ProwlerTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/Activity_1/com/ocr/justine/WarriorTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/Activity_1/com/ocr/justine/WizardTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ocr/justine/CreatePlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ocr/justine/CreatePlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ocr/justine/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ocr/justine/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ocr/justine/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ocr/justine/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ocr/justine/Prowler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ocr/justine/Prowler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ocr/justine/Warrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ocr/justine/Warrior.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ocr/justine/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ocr/justine/Wizard.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -58,14 +44,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="17368" />
-          <entry key="PLAIN_TEXT" value="1088" />
+          <entry key="JAVA" value="17648" />
+          <entry key="PLAIN_TEXT" value="1099" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="17368" />
-          <entry key="txt" value="1088" />
+          <entry key="java" value="17648" />
+          <entry key="txt" value="1099" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -81,8 +67,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ocr/justine/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="35" lean-forward="true" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
+            <state relative-caret-position="135">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -90,8 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ocr/justine/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="96" column="7" lean-forward="true" selection-start-line="89" selection-start-column="2" selection-end-line="96" selection-end-column="7" />
+            <state relative-caret-position="-1867">
+              <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#325#326#0" expanded="true" />
@@ -121,11 +107,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ocr/justine/CreatePlayer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1298">
-              <caret line="138" column="26" selection-start-line="138" selection-start-column="26" selection-end-line="138" selection-end-column="26" />
+            <state relative-caret-position="1005">
+              <caret line="67" column="29" selection-start-line="67" selection-start-column="29" selection-end-line="67" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#4924#4925#0" expanded="true" />
@@ -161,10 +147,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/ocr/justine/Wizard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
+            <state relative-caret-position="9">
               <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
             </state>
           </provider>
@@ -195,14 +181,14 @@
         <option value="$PROJECT_DIR$/test/com/ocr/justine/WarriorTest.java" />
         <option value="$PROJECT_DIR$/test/com/ocr/justine/ProwlerTest.java" />
         <option value="$PROJECT_DIR$/test/com/ocr/justine/WizardTest.java" />
-        <option value="$PROJECT_DIR$/src/com/ocr/justine/Main.java" />
         <option value="$PROJECT_DIR$/test/com/ocr/justine/CreatePlayerTest.java" />
         <option value="$PROJECT_DIR$/test/com/ocr/justine/PlayerTest.java" />
-        <option value="$PROJECT_DIR$/src/com/ocr/justine/Player.java" />
         <option value="$PROJECT_DIR$/src/com/ocr/justine/Wizard.java" />
         <option value="$PROJECT_DIR$/src/com/ocr/justine/Warrior.java" />
         <option value="$PROJECT_DIR$/src/com/ocr/justine/Prowler.java" />
         <option value="$PROJECT_DIR$/src/com/ocr/justine/CreatePlayer.java" />
+        <option value="$PROJECT_DIR$/src/com/ocr/justine/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/ocr/justine/Player.java" />
       </list>
     </option>
   </component>
@@ -266,7 +252,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536608688951" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536609577487" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../MyMenu-I" />
@@ -600,7 +586,14 @@
       <option name="project" value="LOCAL" />
       <updated>1536607279947</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="add javadoc">
+      <created>1536609495973</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1536609495973</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -727,7 +720,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Improve instantiation of the children classes" />
     <MESSAGE value="Clean up files" />
     <MESSAGE value="Optimize createPlayer" />
     <MESSAGE value="Reorganize testPlayer" />
@@ -752,7 +744,8 @@
     <MESSAGE value="Catch all exceptions in CreatePlayer" />
     <MESSAGE value="Catch exception in class Player" />
     <MESSAGE value="Test successfully method attack in class Player" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test successfully method attack in class Player" />
+    <MESSAGE value="add javadoc" />
+    <option name="LAST_COMMIT_MESSAGE" value="add javadoc" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -872,13 +865,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ocr/justine/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="35" lean-forward="true" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/com/ocr/justine/CreatePlayerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1650">
@@ -889,24 +875,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ocr/justine/Wizard.java">
+    <entry file="file://$PROJECT_DIR$/src/com/ocr/justine/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ocr/justine/Warrior.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ocr/justine/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="96" column="7" lean-forward="true" selection-start-line="89" selection-start-column="2" selection-end-line="96" selection-end-column="7" />
+        <state relative-caret-position="-1867">
+          <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#325#326#0" expanded="true" />
@@ -935,17 +914,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ocr/justine/Prowler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ocr/justine/CreatePlayer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1298">
-          <caret line="138" column="26" selection-start-line="138" selection-start-column="26" selection-end-line="138" selection-end-column="26" />
+        <state relative-caret-position="1005">
+          <caret line="67" column="29" selection-start-line="67" selection-start-column="29" selection-end-line="67" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#4924#4925#0" expanded="true" />
@@ -959,6 +931,27 @@
             <element signature="e#5216#5217#0" expanded="true" />
             <element signature="e#5259#5260#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ocr/justine/Prowler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ocr/justine/Warrior.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ocr/justine/Wizard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9">
+          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
         </state>
       </provider>
     </entry>

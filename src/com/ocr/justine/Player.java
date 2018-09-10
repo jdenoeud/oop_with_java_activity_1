@@ -13,46 +13,84 @@ public abstract class Player {
     protected int level;
 
 
+    /**
+     * @return strength of the player
+     */
     public int getStrength() {
         return strength;
     }
 
+    /**
+     * @return the player agility
+     */
     public int getAgility() {
         return agility;
     }
 
+    /**
+     * @return the payer intelligence
+     */
     public int getIntelligence() {
         return intelligence;
     }
 
+    /**
+     * @return the player level
+     */
     public int getLevel() {
         return level;
     }
 
+    /**
+     * @return the player number (1 or 2)
+     */
     public int getPlayerNumber() {
         return playerNumber;
     }
 
+    /**
+     * @return the player vitality
+     */
     public int getLife() {
         return life;
     }
 
+    /**
+     * Set the attribute strength
+     * @param strength
+     */
     public void setStrength(int strength) {
         this.strength = strength;
     }
 
+    /**
+     * Set the attribute agility
+     * @param agility
+     */
     public void setAgility(int agility) {
         this.agility = agility;
     }
 
+    /**
+     *  Set the attribute intelligence
+     * @param intelligence
+     */
     public void setIntelligence(int intelligence) {
         this.intelligence = intelligence;
     }
 
+    /**
+     * Set the attribute level
+     * @param level
+     */
     public void setLevel(int level) {
         this.level = level;
     }
 
+    /**
+     * Set the attribute life
+     * @param life
+     */
     public void setLife(int life) {
         this.life = life;
     }
