@@ -15,7 +15,7 @@ public class Warrior extends Player{
 
     @Override
     public void basicAttack(Player target){
-        int damagesTarget = this.getLevel();
+        int damagesTarget = this.getStrength();
         target.setLife(target.getLife() - damagesTarget);
         System.out.println("Joueur "+this.getPlayerNumber()+" utilise Coup d'Epée et inflige "+damagesTarget+" dommages.");
         System.out.println("Joueur "+target.getPlayerNumber()+" perd "+ damagesTarget + " points de vie");

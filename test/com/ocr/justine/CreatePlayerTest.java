@@ -24,9 +24,7 @@ class CreatePlayerTest {
         System.setOut(System.out);
     }
 
-    @Test
-    void createPlayer() {
-    }
+
 
     //testing initRole
     @Test
