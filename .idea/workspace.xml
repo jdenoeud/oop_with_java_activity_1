@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Activity_1:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/test/com/ocr/justine/CreatePlayerTest.java" line="30" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e08a6084-e290-40b0-b081-00137d8a9ba1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Activity_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/Activity_1_jar/Activity_1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Activity_1/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ocr/justine/CreatePlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ocr/justine/CreatePlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ocr/justine/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ocr/justine/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ocr/justine/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ocr/justine/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ocr/justine/Prowler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ocr/justine/Prowler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ocr/justine/Warrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ocr/justine/Warrior.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ocr/justine/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ocr/justine/Wizard.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,36 +46,72 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="15" />
-          <entry key="JAVA" value="44" />
+          <entry key="JAVA" value="47" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="18312" />
-          <entry key="PLAIN_TEXT" value="1115" />
+          <entry key="PLAIN_TEXT" value="1153" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="18312" />
-          <entry key="txt" value="1115" />
+          <entry key="txt" value="1153" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="15" />
-          <entry key="java" value="44" />
+          <entry key="java" value="47" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/ocr/justine/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
               <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/ocr/justine/CreatePlayerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1650">
+              <caret line="114" selection-start-line="114" selection-end-line="121" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/ocr/justine/PlayerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="34" column="85" selection-start-line="34" selection-start-column="85" selection-end-line="34" selection-end-column="85" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/ocr/justine/ProwlerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -150,7 +189,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ocr/justine/Wizard.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="443">
@@ -226,6 +265,30 @@
             <path>
               <item name="Activity_1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Activity_1" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Activity_1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Activity_1" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Activity_1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Activity_1" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="Activity_1_jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Activity_1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Activity_1" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Activity_1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Activity_1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -255,10 +318,13 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536612215401" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536613827422" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MyMenu-I" />
+    <property name="last_opened_file_path" value="$USER_HOME$/openclassroom_cours/cours_java/Activity_1" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
@@ -597,22 +663,17 @@
       <option name="project" value="LOCAL" />
       <updated>1536609789638</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Final code check and improvements">
+      <created>1536612237695</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1536612237695</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CreatePlayerTest_Given_WizardAndNotIntegerAgilityValue_When_CreatePlayer_Then_GetErrorMessage - 2018.09.10 at 21h 07m 33s.xml">
-      <configuration name="CreatePlayerTest.Given_WizardAndNotIntegerAgilityValue_When_CreatePlayer_Then_GetErrorMessage" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CreatePlayerTest_Given_WizardAndNotIntegerForIntelligenceValue_When_CreatePlayer_Then_GetErrorMessage - 2018.09.10 at 21h 08m 11s.xml">
-      <configuration name="CreatePlayerTest.Given_WizardAndNotIntegerForIntelligenceValue_When_CreatePlayer_Then_GetErrorMessage" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PlayerTest_Given_BadValueOfAttackNumber_When_PlayerAttack_Then_GetErrorMessage - 2018.09.10 at 21h 13m 55s.xml">
-      <configuration name="PlayerTest.Given_BadValueOfAttackNumber_When_PlayerAttack_Then_GetErrorMessage" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PlayerTest_Given_WarriorAttackWizard_when_WarriorBasicAttack_Then_GetGoodLifeValues - 2018.09.10 at 21h 17m 58s.xml">
-      <configuration name="PlayerTest.Given_WarriorAttackWizard_when_WarriorBasicAttack_Then_GetGoodLifeValues" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="PlayerTest_Given_WarriorAttackWizard_when_WarriorBasicAttack_Then_GetGoodLifeValues - 2018.09.10 at 21h 19m 36s.xml">
       <configuration name="PlayerTest.Given_WarriorAttackWizard_when_WarriorBasicAttack_Then_GetGoodLifeValues" configurationId="JUnit" />
     </history-entry>
@@ -631,10 +692,21 @@
     <history-entry file="WizardTest - 2018.09.10 at 21h 20m 27s.xml">
       <configuration name="WizardTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CreatePlayerTest - 2018.09.10 at 22h 41m 02s.xml">
+      <configuration name="CreatePlayerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PlayerTest - 2018.09.10 at 22h 41m 12s.xml">
+      <configuration name="PlayerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProwlerTest - 2018.09.10 at 22h 41m 21s.xml">
+      <configuration name="ProwlerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_Activity_1 - 2018.09.10 at 22h 41m 31s.xml">
+      <configuration name="All in Activity_1" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="1365" y="0" width="1682" height="1051" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6704731" visible="true" weight="0.15911873" />
       <window_info id="Structure" order="1" sideWeight="0.32952693" side_tool="true" weight="0.17074664" />
@@ -665,7 +737,7 @@
       <window_info anchor="right" id="Coverage" order="8" sideWeight="0.5008157" side_tool="true" weight="0.0" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6704731" visible="true" weight="0.15911873" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6704731" visible="true" weight="0.15911873" />
       <window_info id="Structure" order="1" sideWeight="0.32952693" side_tool="true" weight="0.17074664" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -674,7 +746,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3401507" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3401507" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.26372445" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -724,7 +796,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Optimize createPlayer" />
     <MESSAGE value="Reorganize testPlayer" />
     <MESSAGE value="Add method attack(attacker, target)" />
     <MESSAGE value="Add basic and special attacks to Warrior" />
@@ -749,7 +820,8 @@
     <MESSAGE value="Test successfully method attack in class Player" />
     <MESSAGE value="add javadoc" />
     <MESSAGE value="Complete javadoc" />
-    <option name="LAST_COMMIT_MESSAGE" value="Complete javadoc" />
+    <MESSAGE value="Final code check and improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final code check and improvements" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -832,26 +904,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/com/ocr/justine/MainTest.java" />
-    <entry file="file://$PROJECT_DIR$/test/com/ocr/justine/PlayerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="34" column="85" selection-start-line="34" selection-start-column="85" selection-end-line="34" selection-end-column="85" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/ocr/justine/ProwlerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/com/ocr/justine/WarriorTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
@@ -866,23 +918,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="34" lean-forward="true" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/ocr/justine/CreatePlayerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1650">
-          <caret line="114" selection-start-line="114" selection-end-line="121" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ocr/justine/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -958,5 +993,119 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/ocr/justine/CreatePlayerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1650">
+          <caret line="114" selection-start-line="114" selection-end-line="121" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/ocr/justine/PlayerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="34" column="85" selection-start-line="34" selection-start-column="85" selection-end-line="34" selection-end-column="85" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/ocr/justine/ProwlerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ocr/justine/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>Activity_1:jar</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Activity_1</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
