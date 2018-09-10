@@ -61,22 +61,27 @@ public abstract class Player {
 
     public void attack(Player target) {
         Scanner sc = new Scanner(System.in);
-
-        System.out.println("Joueur " + this.getPlayerNumber() + " (" + this.getLife() +
-                           " Vitalité) veuillez choisir votre action (1 : Attaque Basique, 2 : Attaque Spéciale)");
-
+        int response = 0;
+        boolean responseIsGood = false;
         do {
-            switch (sc.nextInt()) {
-                case 1:
+            System.out.println("Joueur " + this.getPlayerNumber() + " (" + this.getLife() +
+                    " Vitalité) veuillez choisir votre action (1 : Attaque Basique, 2 : Attaque Spéciale)");
+            try{
+                response = sc.nextInt();
+                responseIsGood = (response>=1 && response <=2);
+            } catch (InputMismatchException e) {
+                sc.next();
+                responseIsGood= false;
+             }
+            if (responseIsGood){
+                if (response == 1)
                     this.basicAttack(target);
-                    return;
-                case 2:
+                else
                     this.specialAttack(target);
-                    return;
-                default:
-                    System.out.println("Vous n'avez pas choisi parmi les 2 actions proposées");
+            } else {
+                System.out.println("Vous n'avez pas choisi parmi les 2 actions proposées");
             }
-        } while (true);
+        } while (!responseIsGood);
     }
 
     public Player( int playerNumber, int level, int strength, int agility, int intelligence) {
