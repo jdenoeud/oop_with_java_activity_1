@@ -1,6 +1,7 @@
 package com.ocr.justine;
 
-public class Prowler extends Player{
+
+public class Prowler extends Player {
 
     /**
      * Construct the Prowler using Player constructor
@@ -10,18 +11,20 @@ public class Prowler extends Player{
      * @param agility Agility of the player (between 0 and 100)
      * @param intelligence Intelligence of the player (between 0 and 100)
      */
-    public Prowler( int playerNumber, int level, int strength, int agility, int intelligence) {
+    public Prowler (int playerNumber, int level, int strength, int agility, int intelligence) {
         super(playerNumber, level, strength, agility, intelligence);
     }
+
     /**
      *
-     * Describe the player and specify the playerNumber,  role, level, life, strength, agility,and intelligence of the player
+     * Describe the player and specify the playerNumber, role, level, life, strength, agility, and intelligence of the player
      *
      */
     @Override
-    public void describe(){
-        System.out.println("Ark je suis le Rôdeur Joueur "+this.playerNumber+" niveau "+this.level+" je possède "+this.life+" de vitalité, "+this.strength+" de force, "+this.agility+" d'agilité et "+this.intelligence+" d'intelligence !"
-        );
+    public void describe() {
+        System.out.println("Ark je suis le Rôdeur Joueur " + this.playerNumber + " niveau " + this.level +
+                           " je possède " + this.life + " de vitalité, " + this.strength + " de force, " +
+                           this.agility + " d'agilité et " + this.intelligence + " d'intelligence !");
     }
 
     /**
@@ -29,13 +32,13 @@ public class Prowler extends Player{
      * @param target the player attacked
      */
     @Override
-    public void basicAttack(Player target){
+    public void basicAttack(Player target) {
         int damagesTarget = this.getAgility();
         target.setLife(target.getLife() - damagesTarget);
-        System.out.println("Joueur "+this.getPlayerNumber()+" utilise Tir à l'Arc et inflige "+damagesTarget+" dommages.");
-        System.out.println("Joueur "+target.getPlayerNumber()+" perd "+ damagesTarget + " points de vie");
-        if (target.getLife()<=0)
-            System.out.println("Joueur "+target.getPlayerNumber()+" est mort");
+        System.out.println("Joueur " + this.getPlayerNumber() + " utilise Tir à l'Arc et inflige " + damagesTarget + " dommages.");
+        System.out.println("Joueur " + target.getPlayerNumber() + " perd " + damagesTarget + " points de vie");
+        if (target.getLife() <= 0)
+            System.out.println("Joueur " + target.getPlayerNumber() + " est mort");
     }
 
     /**
@@ -43,11 +46,9 @@ public class Prowler extends Player{
      * @param target the player attacked
      */
     @Override
-    public void specialAttack(Player target){
-        int bonus = this.getLevel() /2;
+    public void specialAttack(Player target) {
+        int bonus = this.getLevel() / 2;
         this.setAgility(this.getAgility()+bonus);
-        System.out.println("Joueur "+this.getPlayerNumber()+" utilise Concentration et gagne "+bonus+" en agilité.");
-
+        System.out.println("Joueur " + this.getPlayerNumber() + " utilise Concentration et gagne " + bonus + " en agilité.");
     }
-
 }

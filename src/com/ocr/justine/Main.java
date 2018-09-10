@@ -1,8 +1,6 @@
 package com.ocr.justine;
 
 
-import static java.nio.file.StandardOpenOption.APPEND;
-
 public class Main {
 
 

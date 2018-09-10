@@ -3,6 +3,7 @@ package com.ocr.justine;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+
 public abstract class Player {
 
     protected int life;
@@ -14,42 +15,42 @@ public abstract class Player {
 
 
     /**
-     * @return strength of the player
+     * @return player's strength
      */
     public int getStrength() {
         return strength;
     }
 
     /**
-     * @return the player agility
+     * @return player's agility
      */
     public int getAgility() {
         return agility;
     }
 
     /**
-     * @return the payer intelligence
+     * @return player's intelligence
      */
     public int getIntelligence() {
         return intelligence;
     }
 
     /**
-     * @return the player level
+     * @return player's level
      */
     public int getLevel() {
         return level;
     }
 
     /**
-     * @return the player number (1 or 2)
+     * @return player's number (1 or 2)
      */
     public int getPlayerNumber() {
         return playerNumber;
     }
 
     /**
-     * @return the player vitality
+     * @return player's vitality
      */
     public int getLife() {
         return life;
@@ -97,31 +98,30 @@ public abstract class Player {
 
 
     /**
-     * Ask the player to choose an attack and launch the attack choosen
+     * Asks the player to choose an attack, and launches it
      *  @param target the player attacked
      */
     public void attack(Player target) {
         Scanner sc = new Scanner(System.in);
         int response = 0;
-        boolean responseIsGood = false;
+        boolean responseIsGood;
         do {
             System.out.println("Joueur " + this.getPlayerNumber() + " (" + this.getLife() +
                     " Vitalité) veuillez choisir votre action (1 : Attaque Basique, 2 : Attaque Spéciale)");
-            try{
+            try {
                 response = sc.nextInt();
                 responseIsGood = (response>=1 && response <=2);
             } catch (InputMismatchException e) {
                 sc.next();
-                responseIsGood= false;
-             }
-            if (responseIsGood){
-                if (response == 1)
-                    this.basicAttack(target);
-                else
-                    this.specialAttack(target);
-            } else {
-                System.out.println("Vous n'avez pas choisi parmi les 2 actions proposées");
+                responseIsGood = false;
             }
+
+            if (responseIsGood && response == 1)
+                this.basicAttack(target);
+            else if (responseIsGood)
+                this.specialAttack(target);
+            else
+                System.out.println("Vous n'avez pas choisi parmi les 2 actions proposées");
         } while (!responseIsGood);
     }
 
@@ -133,21 +133,19 @@ public abstract class Player {
      * @param agility Agility of the player (between 0 and 100)
      * @param intelligence Intelligence of the player (between 0 and 100)
      */
-    public Player( int playerNumber, int level, int strength, int agility, int intelligence) {
+    public Player (int playerNumber, int level, int strength, int agility, int intelligence) {
         this.playerNumber = playerNumber;
         this.level = level;
         this.life = (this.level)*5;
-        this.strength=strength;
+        this.strength = strength;
         this.agility = agility;
         this.intelligence = intelligence;
-
     }
 
     /**
-     * Describe the player and specify the playerNumber,  role, level, life, strength, agility,and intelligence of the player
+     * Describe the player and specify the playerNumber, role, level, life, strength, agility, and intelligence of the player
      */
     public abstract void describe();
-
 
     /**
      * Use the basic Attack to attack the other player
