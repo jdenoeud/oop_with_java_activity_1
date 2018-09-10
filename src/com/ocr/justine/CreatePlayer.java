@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class CreatePlayer {
     Scanner sc = new Scanner(System.in);
-    private int role;
+    public int role;
     private int level;
     private int strength;
     private int agility;
@@ -35,7 +35,6 @@ public class CreatePlayer {
             response = sc.nextInt();
             if (response < 1 || response > 3) {
                 System.out.println("Vous n'avez pas choisi parmi les 3 classes proposées");
-                sc.next();
             } else {
                 responseIsGood = true;
             }
