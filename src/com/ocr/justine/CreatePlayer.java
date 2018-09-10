@@ -1,5 +1,6 @@
 package com.ocr.justine;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class CreatePlayer {
@@ -35,12 +36,17 @@ public class CreatePlayer {
         int response = 0;
         do {
             System.out.println("Veuillez choisir la classe de votre personnage (1 : Guerrier, 2 : Rôdeur, 3 : Mage)");
-            response = sc.nextInt();
-            if (response < 1 || response > 3) {
-                System.out.println("Vous n'avez pas choisi parmi les 3 classes proposées");
-            } else {
-                responseIsGood = true;
+            try {
+                response = sc.nextInt();
+               responseIsGood = (response >= 1 && response <= 3);
+            } catch (InputMismatchException e){
+                sc.next();
+                responseIsGood=false;
+                System.out.println("Exception");
             }
+           if (!responseIsGood)
+               System.out.println("Vous n'avez pas choisi parmi les 3 classes proposées");
+
         } while (!responseIsGood);
         this.role = response;
     }
