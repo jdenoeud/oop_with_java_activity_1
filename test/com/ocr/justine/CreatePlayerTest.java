@@ -76,23 +76,32 @@ class CreatePlayerTest {
         assertEquals("Le niveau doit être compris entre 1 et 100", output[3]);
     }
 
-    //tests on initLevel
+    //tests on initStrength
     @Test
-    void Given_WarriorWithLevel20_When_CreatePlayer_Then_GetGoodLevel() {
-        System.setIn(new ByteArrayInputStream("1\n20\n10\n10\n0\n".getBytes()));
+    void Given_WizardWithLevel30AndStrengt10_When_CreatePlayer_Then_GetGoodStrength() {
+        System.setIn(new ByteArrayInputStream("3\n30\n10\n10\n10\n".getBytes()));
         CreatePlayer createPlayer = new CreatePlayer();
         createPlayer.createPlayer(1);
         String[] output = outContent.toString().replace("\r\n", "\n").split("\n");
-        assertEquals(20, createPlayer.getLevel());
+        assertEquals(10, createPlayer.getStrength());
     }
 
     @Test
-    void Given_WarriorWithBadLevelValue_When_CreatePlayer_Then_GetErrorMessage() {
-        System.setIn(new ByteArrayInputStream("1\n200\n10\n10\n0\n0\n".getBytes()));
+    void Given_WizardAndBadStrengthValue_When_CreatePlayer_Then_GetErrorMessage() {
+        System.setIn(new ByteArrayInputStream("1\n30\n200\n10\n10\n10\n".getBytes()));
         CreatePlayer createPlayer = new CreatePlayer();
         createPlayer.createPlayer(1);
         String[] output = outContent.toString().replace("\r\n", "\n").split("\n");
-        assertEquals("Le niveau doit être compris entre 1 et 100", output[3]);
+        assertEquals("La force doit être comprise entre 0 et 100", output[4]);
+    }
+
+    @Test
+    void Given_WizardAndStrengthValueSuperiortoLevelValue_When_CreatePlayer_Then_GetErrorMessage() {
+        System.setIn(new ByteArrayInputStream("1\n30\n60\n10\n10\n10\n".getBytes()));
+        CreatePlayer createPlayer = new CreatePlayer();
+        createPlayer.createPlayer(1);
+        String[] output = outContent.toString().replace("\r\n", "\n").split("\n");
+        assertEquals("Le total force + agilité + intelligence doit être égal au niveau du joueur", output[4]);
     }
 
 
